@@ -1,0 +1,59 @@
+$color_prime: #f3f4f4;
+$color_second: #4b79a1;
+$color_dark: #171a20;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: Arial, sans-serif;
+}
+.unset {
+  all: unset !important;
+}
+.displayTrans {
+  transition: visibility 1s, opacity 0.2s linear;
+}
+.checkWrapp {
+  .checkMark {
+    &::before {
+      content: " ";
+      transition: all 0.2s;
+      position: absolute;
+      display: block;
+      scale: 0;
+      top: 9px;
+      left: 4px;
+      width: 13px;
+      height: 2px;
+      background-color: $color_prime;
+      transform: rotate(-45deg);
+    }
+
+    &::after {
+      content: " ";
+      transition: all 0.2s;
+      position: absolute;
+      display: block;
+      scale: 0;
+      top: 10px;
+      left: 4px;
+      width: 2px;
+      height: 4px;
+      background-color: $color_prime;
+      transform: rotate(-30deg);
+    }
+  }
+
+  input {
+    &:checked {
+      ~ .checkMark {
+        &::after,
+        &::before {
+          scale: 1;
+        }
+      }
+    }
+  }
+}
