@@ -5,7 +5,7 @@ const Layout = () => {
   return (
     <>
       <Navbar />
-      <main className="relative">
+      <main className="relative" dir="rtl">
         <Outlet />
       </main>
       <Footer />
