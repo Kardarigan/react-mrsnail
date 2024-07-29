@@ -14,19 +14,27 @@
       @apply flex justify-between items-center;
     }
   }
-
   .button {
-    @apply transition duration-200 max-md:text-sm text-center font-semibold rounded-full px-8 py-3;
+    @apply transition text-nowrap duration-200 lg:text-sm text-center font-semibold backdrop-blur-sm text-[12px] rounded max-md:w-full inline-block px-10 py-2;
     &-outline {
       * {
         @apply bg-transparent;
       }
-      &-b {
-        @apply border-2 border-slate-950 text-slate-950 hover:bg-slate-50;
+      &-light {
+        @apply text-slate-100  fakeBorderLight hover:bg-slate-50 hover:text-slate-800;
+      }
+      &-dark {
+        @apply text-slate-900 bg-transparent fakeBorderDark hover:bg-slate-900 hover:text-slate-200;
       }
     }
-    &-g {
-      @apply bg-emerald-800 text-slate-50 hover:bg-lime-400 hover:text-green-950;
+    &-light {
+      @apply text-slate-800 bg-slate-200 bg-opacity-70 hover:bg-opacity-80;
+    }
+    &-dark {
+      @apply text-slate-200 bg-slate-700 bg-opacity-70 hover:bg-opacity-80;
+    }
+    &-sky {
+      @apply text-slate-200 bg-blue-600 hover:bg-opacity-80;
     }
   }
   .center {
@@ -45,11 +53,14 @@
   }
   .title {
     @apply md:text-4xl text-2xl font-bold;
+    &-sm {
+      @apply md:text-2xl text-xl font-extrabold;
+    }
     &-lg {
-      @apply md:text-6xl text-5xl font-extrabold tracking-tight;
+      @apply md:text-6xl text-5xl font-extrabold;
     }
     &-sup {
-      @apply md:text-8xl text-5xl font-extrabold tracking-tight;
+      @apply md:text-8xl text-5xl font-extrabold;
     }
   }
   .para {
@@ -60,6 +71,23 @@
   }
   .label {
     @apply md:text-xs text-[12px] text-slate-600;
+  }
+  .name {
+    @apply overflow-hidden relative max-md:hidden;
+    div {
+      @apply w-full h-1 bottom-0 absolute transition-all bg-blue-100;
+    }
+    h1 {
+      @apply title-sm relative px-3 transition-all;
+    }
+    &:hover {
+      div {
+        @apply h-full bg-yellow-200;
+      }
+      h1 {
+        @apply text-slate-800;
+      }
+    }
   }
 }
 @layer utilities {
@@ -90,7 +118,7 @@
     @apply sm:pb-24 pb-12;
   }
   .pagecenter {
-    @apply max-w-[1250px] mx-auto;
+    @apply max-w-[1200px] mx-auto;
   }
   .size-screen {
     @apply w-screen h-screen;

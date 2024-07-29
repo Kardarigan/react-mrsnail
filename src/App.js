@@ -1,5 +1,14 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Layout } from "./components/Portal";
+
 function App() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Layout />}></Route>
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;
