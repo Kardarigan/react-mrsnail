@@ -48,7 +48,7 @@ const Navbar = () => {
               <i class="fas fa-solid fa-bars ms-2" />
             </span>
             <menu
-              className={`absolute top-10 right-0 w-full displayTrans ${
+              className={`absolute top-10 right-0 z-20 w-full displayTrans ${
                 menuOpen ? "visible opacity-100" : "invisible opacity-0"
               }`}
             >

@@ -1,4 +1,5 @@
 import Hero from "../asset/images/20240428_045027.jpg";
+import { Category } from "../components/Portal";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
           </div>
         </a>
       </section>
+      <Category />
     </>
   );
 };
