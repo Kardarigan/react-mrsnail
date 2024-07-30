@@ -8,7 +8,7 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="bg-slate-900">
+      <header className="bg-slate-900 md:px-5">
         <div className="pagecenter flex-seperate max-md:px-5 text-blue-100 py-3">
           <Link to="/" className="name">
             <div></div>

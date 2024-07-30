@@ -14,7 +14,7 @@ const Home = () => {
           <div className="absolute right-0 top-20 m-12 max-w-[550px] text-yellow-50">
             <h2 className="title-sup">فکر میکنم حلزونت از ما خوشش بیاد!</h2>
             <p className="mt-5 max-md:text-xs">
-              برای مشاهده ی خدمات حلوزنی آماده ای؟ اگه آره کلیک کن تا شروع کنیم.
+              میخوای خدمات حلوزنیمون رو ببینی؟ اگه آره کلیک کن تا شروع کنیم.
             </p>
           </div>
         </a>
