@@ -1,5 +1,6 @@
 import Hero from "../asset/images/20240428_045027.jpg";
-import { Carousel, Category } from "../components/Portal";
+import { Carousel, Category, Slider } from "../components/Portal";
+import { homeSlide } from "../data/constans";
 import { products } from "../data/products";
 
 const Home = () => {
@@ -22,6 +23,7 @@ const Home = () => {
       </section>
       <Category />
       <Carousel title="تازه ترین کالاها" products={products} />
+      <Slider things={homeSlide} />
     </>
   );
 };

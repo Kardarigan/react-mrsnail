@@ -1,4 +1,5 @@
 import category_1 from "../asset/images/cateogry_1.png";
+import News_1 from "../asset/images/1343307.png";
 
 export const navmenu = [
   {
@@ -61,5 +62,41 @@ export const categories = [
     bgColor: "#3ABEF9",
     label: "خوراک ها",
     path: "",
+  },
+];
+
+export const homeSlide = [
+  {
+    title: "بزرگترین رویداد حلزونی در تاریخ ایران",
+    subtitle: "برای شرکت در این رویداد همین اکنون پیام بده",
+    background: News_1,
+    buttons: [
+      {
+        label: "ارسال پیام",
+        path: "/",
+      },
+    ],
+  },
+  {
+    title: "بزرگترین رویداد حلزونی در تاریخ ایران",
+    subtitle: "برای شرکت در این رویداد همین اکنون پیام بده",
+    background: News_1,
+    buttons: [
+      {
+        label: "ارسال پیام",
+        path: "/",
+      },
+    ],
+  },
+  {
+    title: "بزرگترین رویداد حلزونی در تاریخ ایران",
+    subtitle: "برای شرکت در این رویداد همین اکنون پیام بده",
+    background: News_1,
+    buttons: [
+      {
+        label: "ارسال پیام",
+        path: "/",
+      },
+    ],
   },
 ];
