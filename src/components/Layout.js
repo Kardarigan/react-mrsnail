@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import { Navbar, Footer } from "./Portal";
+import { Navbar, Footer, Articles } from "./Portal";
 
 const Layout = () => {
   return (
@@ -7,6 +7,7 @@ const Layout = () => {
       <Navbar />
       <main className="relative" dir="rtl">
         <Outlet />
+        <Articles />
       </main>
       <Footer />
     </>

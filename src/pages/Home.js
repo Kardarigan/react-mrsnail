@@ -6,7 +6,7 @@ import { products } from "../data/products";
 const Home = () => {
   return (
     <>
-      <section className="p-5">
+      <section>
         <a href="/" className="relative">
           <img
             src={Hero}

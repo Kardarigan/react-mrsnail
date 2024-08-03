@@ -1,7 +1,81 @@
-import React from "react";
+import { Link } from "react-router-dom";
+import { footer, social } from "../../data/constans";
 
 const Footer = () => {
-  return <div>Footer</div>;
+  return (
+    <footer
+      className="padding-x padding-t pb-5 min-h-screen bg-slate-900 text-slate-100 flex flex-col justify-between"
+      dir="rtl"
+    >
+      <div>
+        <div className="grid md:grid-cols-3 max-md:gap-8 max-w-[800px] max-md:text-center">
+          {footer.links.map((item, index) => {
+            return (
+              <div key={index}>
+                <h3 className="para text-slate-900 bg-slate-100 md:inline px-1">
+                  {item.title}
+                </h3>
+                <ul className="para-sm mt-3 grid gap-y-3">
+                  {item.links.map((link, index) => {
+                    return (
+                      <li key={index}>
+                        <Link to={link.path} className="hover:underline">
+                          {link.label}
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            );
+          })}
+        </div>
+        <div className="md:flex">
+          <ul className="flex gap-5 mt-5">
+            {footer.logos.map((item, index) => {
+              return (
+                <li key={index}>
+                  <a href={item.path}>
+                    <img
+                      src={item.logo}
+                      alt={item.label}
+                      className="max-w-28"
+                    />
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+          <div className="p-8 md:max-w-96">
+            <h3 className="para-lil">
+              برای به روز بودن از آخرین رویداد ها و تخفیفات آغای حلزون رو در
+              صفحات اجتماعی دنبال کنید :
+            </h3>
+            <ul className="flex gap-4 mt-3">
+              {social.map((item, index) => {
+                return (
+                  <li key={index}>
+                    <a
+                      href={item.path}
+                      className={`${item.colorClass} hover:text-xl border-2 border-slate-100 transition-all size-12 text-center flex-fullcenter rounded-full`}
+                    >
+                      <i className={`fa-brands  ${item.iconClass}`} />
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div className="text-center">
+        <hr />
+        <p className="mt-2">
+          تمام حقوق این وبسات متعلق به آقای حلزون میباشد &copy; 2024
+        </p>
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;
