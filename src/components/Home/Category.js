@@ -9,7 +9,7 @@ const Category = () => {
         <div className="grid md:grid-cols-6 grid-cols-3 md:gap-12 gap-5">
           {categories.map((item, index) => {
             return (
-              <Link to={item.path} className="text-center">
+              <Link to={item.path} key={index} className="text-center">
                 <img
                   src={item.cover}
                   alt={item.alt}

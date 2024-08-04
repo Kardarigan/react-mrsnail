@@ -5,9 +5,8 @@ const Layout = () => {
   return (
     <>
       <Navbar />
-      <main className="relative" dir="rtl">
+      <main className="relative text-slate-900" dir="rtl">
         <Outlet />
-        <Articles />
       </main>
       <Footer />
     </>

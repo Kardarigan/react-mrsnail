@@ -81,17 +81,17 @@
   .name {
     @apply overflow-hidden relative max-md:hidden;
     div {
-      @apply w-full h-1 bottom-0 absolute transition-all bg-blue-100;
+      @apply w-full h-1 bottom-0 absolute transition-all bg-slate-100;
     }
     h1 {
       @apply title-sm relative px-3 transition-all;
     }
     &:hover {
       div {
-        @apply h-full bg-yellow-200;
+        @apply h-full bg-slate-100;
       }
       h1 {
-        @apply text-slate-800;
+        @apply text-slate-900;
       }
     }
   }

@@ -1,9 +1,9 @@
 import { lastArticles } from "../../data/constans";
 
-const Articles = () => {
+const Articles = ({ thing }) => {
   return (
     <section className="padding grid gap-3">
-      {lastArticles.map((item, index) => {
+      {thing.map((item, index) => {
         return (
           <div key={index}>
             <h4 className="title-sm">{item.title}</h4>
