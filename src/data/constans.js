@@ -50,7 +50,7 @@ export const footer = {
         },
         {
           label: "تماس با ما",
-          path: "/",
+          path: "/contact",
         },
         {
           label: "قوانین",
@@ -286,6 +286,81 @@ export const about = {
     {
       title: "مشتری از تمام دنیا",
       number: "500",
+    },
+  ],
+};
+
+export const contact = {
+  boxes: [
+    {
+      title: "اطلاعات تماس",
+      items: [
+        {
+          icon: "fa-duotone fa-solid fa-phone",
+          label: "ثابت",
+          describe: "+1 518 879 654",
+        },
+        {
+          icon: "fa-duotone fa-solid fa-mobile",
+          label: "همراه",
+          describe: "+1 518 879 654",
+        },
+        {
+          icon: "fa-duotone fa-solid fa-mobile",
+          label: "همراه",
+          describe: "+1 518 879 654",
+        },
+        {
+          icon: "fa-duotone fa-solid fa-envelope",
+          label: "ایمیل",
+          describe: "mrsnail@gmail.com",
+        },
+        {
+          icon: "fa-sharp-duotone fa-solid fa-location-dot",
+          label: "آدرس",
+          describe: "تهران، خیابان ولیعصر، خیابان پنج، پلاک 96",
+        },
+      ],
+    },
+    {
+      title: "روز های کاری",
+      items: [
+        {
+          icon: "fa-duotone fa-solid fa-calendar",
+          label: "شنبه",
+          describe: "7 - 21",
+        },
+        {
+          icon: "fa-duotone fa-solid fa-calendar",
+          label: "یکشنبه",
+          describe: "7 - 21",
+        },
+        {
+          icon: "fa-duotone fa-solid fa-calendar",
+          label: "دوشنبه",
+          describe: "7 - 21",
+        },
+        {
+          icon: "fa-duotone fa-solid fa-calendar",
+          label: "سه شنبه",
+          describe: "7 - 21",
+        },
+        {
+          icon: "fa-duotone fa-solid fa-calendar",
+          label: "چهارشنبه",
+          describe: "7 - 21",
+        },
+        {
+          icon: "fa-duotone fa-solid fa-calendar",
+          label: "پنجشنبه",
+          describe: "7 - 21",
+        },
+        {
+          icon: "fa-duotone fa-solid fa-calendar",
+          label: "جمعه",
+          describe: "9 - 18",
+        },
+      ],
     },
   ],
 };

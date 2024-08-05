@@ -7,12 +7,17 @@ import Card from "./united/Card";
 import Carousel from "./united/Carousel";
 import Slider from "./united/Slider";
 import Articles from "./united/Articles";
-import About from "./about/About";
 import Half from "./united/Half";
 import Hero from "./united/Hero";
 import Middle from "./united/Middle";
-import Numbers from "./about/Numbers";
+import About from "./company/About";
+import Numbers from "./company/Numbers";
+import Contact from "./company/Contact";
+import Boxes from "./company/Boxes";
+
 export {
+  Boxes,
+  Contact,
   Numbers,
   Middle,
   Hero,

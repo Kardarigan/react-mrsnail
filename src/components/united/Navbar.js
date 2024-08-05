@@ -39,7 +39,7 @@ const Navbar = () => {
             </button>
           </div>
           <div className="flex">
-            <div className="flex flex-row-reverse items-center gap-4 px-3 font-bold text-slate-900 max-md:hidden">
+            <div className="flex flex-row-reverse items-center gap-4 me-10 font-bold text-slate-900 max-md:hidden">
               {footer.links[0].links.map((item, index) => {
                 return (
                   <NavLink
