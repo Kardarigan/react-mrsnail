@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Category = () => {
   return (
-    <section>
+    <section id="firstSection">
       <div className="pagecenter p-5">
         <div className="grid md:grid-cols-6 grid-cols-3 md:gap-12 gap-5">
           {categories.map((item, index) => {

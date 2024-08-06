@@ -14,8 +14,10 @@ import About from "./company/About";
 import Numbers from "./company/Numbers";
 import Contact from "./company/Contact";
 import Boxes from "./company/Boxes";
+import Policy from "./company/Policy";
 
 export {
+  Policy,
   Boxes,
   Contact,
   Numbers,

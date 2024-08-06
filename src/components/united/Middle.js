@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 
-const Middle = ({ thing, dark = false, reverse = false }) => {
+const Middle = ({ thing, id = null, dark = false, reverse = false }) => {
   return (
     <section
       className={`padding-x py-8  ${dark ? "bg-slate-900 text-slate-100" : ""}`}
+      id={id}
     >
       <div
         className={`pagecenter flex${reverse ? " md:flex-row-reverse" : ""}`}

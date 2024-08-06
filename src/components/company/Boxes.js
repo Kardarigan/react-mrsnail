@@ -6,13 +6,8 @@ const Boxes = () => {
       <div className="flex gap-5 max-md:flex-col">
         {contact.boxes.map((box, index) => {
           return (
-            <div
-              key={index}
-              className="bg-slate-900 text-slate-100 md:w-1/2 p-10"
-            >
-              <h2 className="title-sm bg-slate-100 text-slate-900 text-center">
-                {box.title}
-              </h2>
+            <div key={index} className="box md:w-1/2">
+              <h2>{box.title}</h2>
               <ul className="grid gap-y-4 mt-8">
                 {box.items.map((item, index) => {
                   return (

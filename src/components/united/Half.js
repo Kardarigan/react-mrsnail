@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 
-const Half = ({ thing, right = false, dark = false }) => {
+const Half = ({ thing, id = null, right = false, dark = false }) => {
   return (
     <section
       className={`min-h-screen ${
         dark ? "bg-slate-900  text-slate-100" : "bg-slate-50  text-slate-900"
       } flex ${right ? "lg:flex-row-reverse" : "lg:flex-row"} flex-col-reverse`}
+      id={id}
     >
       <div className="lg:w-1/3">
         <div className="padding flex flex-col justify-between h-full">

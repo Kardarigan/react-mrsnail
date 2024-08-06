@@ -6,7 +6,7 @@ const About = () => {
   return (
     <>
       <Hero thing={hero.About} />
-      <Middle thing={middle.about[0]} />
+      <Middle thing={middle.about[0]} id="firstSection" />
       <Half thing={half.about[0]} />
       <Middle thing={middle.about[0]} dark reverse />
       <Numbers />

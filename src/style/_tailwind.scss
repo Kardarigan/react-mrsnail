@@ -95,6 +95,12 @@
       }
     }
   }
+  .box {
+    @apply bg-slate-900 text-slate-100 p-12;
+    h2 {
+      @apply title-sm w-full bg-slate-100 text-slate-900 text-center;
+    }
+  }
 }
 @layer utilities {
   .padding {
