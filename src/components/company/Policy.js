@@ -8,6 +8,7 @@ const Policy = () => {
       <Hero thing={hero.Policy} />
       <Articles thing={articles.policy.overall} id="firstSection" />
       <Rules />
+      <Articles thing={articles.policy.categories} />
     </>
   );
 };

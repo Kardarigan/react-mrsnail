@@ -8,8 +8,8 @@ const Numbers = () => {
           return (
             <>
               <div className="text-center" key={index}>
-                <h6 className="text-blue-500 title-lg">{item.number} +</h6>
-                <h4 className="md:text-sm text-[10px] md:mt-3 mt-1">
+                <h6 className="text-slate-900 title-lg">{item.number} +</h6>
+                <h4 className="md:text-sm text-[10px] bg-slate-900 text-slate-200 md:mt-3 mt-1">
                   {item.title}
                 </h4>
               </div>

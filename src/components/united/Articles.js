@@ -6,7 +6,10 @@ const Articles = ({ thing, id = null }) => {
       {thing.map((item, index) => {
         return (
           <div key={index}>
-            <h4 className="title-sm">{item.title}</h4>
+            <h4 className="title-sm">
+              <i className=""></i>
+              {item.title}
+            </h4>
             <p className="para mt-2">{item.paragraph}</p>
           </div>
         );
