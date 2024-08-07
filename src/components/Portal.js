@@ -15,8 +15,14 @@ import Numbers from "./company/Numbers";
 import Contact from "./company/Contact";
 import Boxes from "./company/Boxes";
 import Policy from "./company/Policy";
+import Blog from "./blog/Blog";
+import Blog_Card from "./blog/Blog_Card";
+import Blogs from "./blog/Blogs";
 
 export {
+  Blog,
+  Blog_Card,
+  Blogs,
   Policy,
   Boxes,
   Contact,

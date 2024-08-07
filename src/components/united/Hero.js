@@ -1,6 +1,6 @@
 import React from "react";
 
-const Hero = ({ thing, dirention = "right" }) => {
+const Hero = ({ thing }) => {
   return (
     <section>
       <a href={thing.path} className="relative">
