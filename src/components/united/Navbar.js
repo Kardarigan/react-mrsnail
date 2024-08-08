@@ -1,6 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import Logo from "../../asset/images/cropped_image.png";
-import { footer, navmenu } from "../../data/constans";
+import { footer, navbar, navmenu } from "../../data/constans";
 import { useState } from "react";
 
 const Navbar = () => {
@@ -40,12 +40,13 @@ const Navbar = () => {
           </div>
           <div className="flex">
             <div className="flex flex-row-reverse items-center gap-4 me-10 font-bold text-slate-900 max-md:hidden">
-              {footer.links[0].links.map((item, index) => {
+              {navbar.map((item, index) => {
                 return (
                   <NavLink
                     to={item.path}
                     key={index}
                     className="hover:text-slate-600"
+                    activeClassName="underlined"
                   >
                     {item.label}
                   </NavLink>

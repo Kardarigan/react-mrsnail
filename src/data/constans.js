@@ -2,7 +2,21 @@ import category_1 from "../asset/images/cateogry_1.png";
 import Hero_1 from "../asset/images/20240428_045027.jpg";
 import News_1 from "../asset/images/1343307.png";
 import Logo_1 from "../asset/images/64e6177329c2d71389b1b219_walmart.png";
-import { Policy } from "../components/Portal";
+
+export const navbar = [
+  {
+    label: "بلاگ",
+    path: "/",
+  },
+  {
+    label: "محصولات",
+    path: "/",
+  },
+  {
+    label: "تماس با ما",
+    path: "/",
+  },
+];
 
 export const navmenu = [
   {
