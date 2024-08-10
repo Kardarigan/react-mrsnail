@@ -6,15 +6,15 @@ import Logo_1 from "../asset/images/64e6177329c2d71389b1b219_walmart.png";
 export const navbar = [
   {
     label: "بلاگ",
-    path: "/",
+    path: "/blog",
   },
   {
     label: "محصولات",
-    path: "/",
+    path: "/products",
   },
   {
     label: "تماس با ما",
-    path: "/",
+    path: "/contact",
   },
 ];
 
@@ -335,6 +335,12 @@ export const hero = {
     title: "قوانین و مقررات",
     path: "#firstSection",
   },
+  form: {
+    cover: Hero_1,
+    title: "فرم ارتباط سریع",
+    subtitle: "جهت سفارش یا هر کار دیگه که داری میتونی ازین فرم استفاده کنی.",
+    path: "#firstSection",
+  },
 };
 
 export const middle = {
@@ -380,6 +386,8 @@ export const about = {
 };
 
 export const contact = {
+  hint: "میتونی بجای تماس گرفتن، از <a href='/contact/form'>این فرم</a> استفاده کنی",
+  formHint: "خوشت نیومد؟ برگرد به صفحه ی <a href='/contact'>ارتباط با ما</a>",
   boxes: [
     {
       title: "اطلاعات تماس",
@@ -450,6 +458,38 @@ export const contact = {
           describe: "9 - 18",
         },
       ],
+    },
+  ],
+  contactForm: [
+    {
+      label: "نام",
+      type: "text",
+      required: true,
+      half: true,
+    },
+    {
+      label: "نام خانوادگی (اختیاری)",
+      type: "text",
+      half: true,
+    },
+    {
+      label: "شماره تماس (اختیاری)",
+      type: "tel",
+    },
+    {
+      label: "ایمیل",
+      type: "email",
+      required: true,
+    },
+    {
+      label: "موضوع پیام",
+      type: "text",
+      required: true,
+    },
+    {
+      label: "متن پیام",
+      type: "textarea",
+      required: true,
     },
   ],
 };

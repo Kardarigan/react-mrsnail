@@ -73,10 +73,10 @@
     }
   }
   .field {
-    @apply bg-slate-700 text-slate-200 border-0 text-sm rounded transition-all duration-100 focus-within:ring-1 focus-within:ring-blue-600 block w-full px-3;
+    @apply bg-slate-900 text-slate-200 border-0 transition-all duration-100 focus-within:ring-1 focus-within:ring-blue-600 block w-full p-3;
   }
   .label {
-    @apply md:text-xs text-[12px] text-slate-600;
+    @apply para font-semibold text-slate-600;
   }
   .name {
     @apply overflow-hidden relative max-md:hidden;

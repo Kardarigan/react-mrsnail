@@ -1,9 +1,11 @@
 import { contact } from "../../data/constans";
+import { Tip } from "../Portal";
 
 const Boxes = () => {
   return (
     <section className="pagecenter padding">
-      <div className="flex gap-5 max-md:flex-col">
+      <Tip message={contact.hint} />
+      <div className="flex mt-5 gap-5 max-md:flex-col">
         {contact.boxes.map((box, index) => {
           return (
             <div key={index} className="box md:w-1/2">
