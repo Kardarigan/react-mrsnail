@@ -3,22 +3,25 @@ import { Navbar, Footer, Loading } from "./Portal";
 import { useState, useEffect } from "react";
 
 const Layout = () => {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const location = useLocation();
 
   useEffect(() => {
     setLoading(true);
-    const timeout = setTimeout(() => {
+
+    const loadTimeout = setTimeout(() => {
       setLoading(false);
     }, 500);
 
-    return () => clearTimeout(timeout);
+    return () => clearTimeout(loadTimeout);
   }, [location]);
+
   return (
     <>
       <Navbar />
       <main className="relative text-slate-900" dir="rtl">
-        {loading ? <Loading /> : <Outlet />}
+        <Loading show={loading} />
+        {!loading && <Outlet />}
       </main>
       <Footer />
     </>

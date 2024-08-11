@@ -70,3 +70,26 @@ html {
     }
   }
 }
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  @apply bg-slate-100 text-slate-900 flex-fullcenter;
+  font-size: 24px;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.loading-enter {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.loading-exit {
+  opacity: 0;
+  pointer-events: none;
+}
