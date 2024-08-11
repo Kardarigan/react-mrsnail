@@ -9,6 +9,10 @@ $color_dark: #171a20;
   scroll-behavior: smooth;
   font-family: iransans_regular, Arial, sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: iransans_black;
   src: url(../asset/IRANSansXBlack.ttf);

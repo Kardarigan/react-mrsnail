@@ -386,7 +386,7 @@ export const about = {
 };
 
 export const contact = {
-  hint: "میتونی بجای تماس گرفتن، از <a href='/contact/form'>این فرم</a> استفاده کنی",
+  hint: "میتونی بجای تماس گرفتن، از <a href='#form'>این فرم</a> استفاده کنی",
   formHint: "خوشت نیومد؟ برگرد به صفحه ی <a href='/contact'>ارتباط با ما</a>",
   boxes: [
     {

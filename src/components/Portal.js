@@ -13,17 +13,17 @@ import Middle from "./united/Middle";
 import About from "./company/About";
 import Numbers from "./company/Numbers";
 import Contact from "./company/Contact";
-import Contact_Form from "./company/Contact_Form";
 import Boxes from "./company/Boxes";
 import Policy from "./company/Policy";
 import Blog from "./blog/Blog";
 import Blog_Card from "./blog/Blog_Card";
 import Blogs from "./blog/Blogs";
 import Tip from "./united/Tip";
+import Loading from "./united/Loading";
 
 export {
+  Loading,
   Tip,
-  Contact_Form,
   Blog,
   Blog_Card,
   Blogs,
