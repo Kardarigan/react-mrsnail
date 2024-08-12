@@ -21,8 +21,10 @@ import Blogs from "./blog/Blogs";
 import Tip from "./united/Tip";
 import Loading from "./united/Loading";
 import All_Products from "./product/All_Products";
+import Overview from "./united/Overview";
 
 export {
+  Overview,
   All_Products,
   Loading,
   Tip,
