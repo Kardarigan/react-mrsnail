@@ -78,7 +78,7 @@ html {
   bottom: 0;
   @apply bg-slate-100 text-slate-900 flex-fullcenter;
   font-size: 24px;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.1s ease-in-out;
   opacity: 0;
   pointer-events: none;
   z-index: 1000;

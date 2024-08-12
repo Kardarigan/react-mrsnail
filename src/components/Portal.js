@@ -20,8 +20,10 @@ import Blog_Card from "./blog/Blog_Card";
 import Blogs from "./blog/Blogs";
 import Tip from "./united/Tip";
 import Loading from "./united/Loading";
+import All_Products from "./product/All_Products";
 
 export {
+  All_Products,
   Loading,
   Tip,
   Blog,

@@ -1,32 +1,23 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  useLocation,
-} from "react-router-dom";
-import { About, Contact, Home, Layout, Policy } from "./components/Portal";
-import { useEffect } from "react";
-
-const ScrollToTop = () => {
-  const { pathname } = useLocation();
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-
-  return null;
-};
+  About,
+  Contact,
+  Home,
+  Layout,
+  Policy,
+  All_Products,
+} from "./components/Portal";
 
 function App() {
   return (
     <Router>
-      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/policy" element={<Policy />} />
+          <Route path="/products" element={<All_Products />} />
         </Route>
       </Routes>
     </Router>

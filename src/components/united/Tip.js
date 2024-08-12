@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 const Tip = ({ message, className }) => {
   return (
     <div
-      className={`bg-slate-700 w-full inline-flex justify-between items-center rounded-full text-slate-50 p-3 ${className}`}
+      className={`bg-slate-700 w-full inline-flex justify-between items-center text-slate-50 p-3 ${className}`}
     >
-      <span className="bg-slate-800 rounded-full text-slate-50 font-extrabold px-5 text-center">
+      <span className="bg-slate-800 rounded-full text-slate-50 font-extrabold px-5 pb-1 text-center">
         بخون
       </span>
       <p

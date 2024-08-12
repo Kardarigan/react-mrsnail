@@ -339,6 +339,10 @@ export const hero = {
     cover: Hero_1,
     title: "فرم ارتباط سریع",
     subtitle: "جهت سفارش یا هر کار دیگه که داری میتونی ازین فرم استفاده کنی.",
+  },
+  products: {
+    cover: Hero_1,
+    title: "تمام کالا ها رو میتونی اینجا پیدا کنی",
     path: "#firstSection",
   },
 };
