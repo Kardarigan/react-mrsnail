@@ -9,14 +9,13 @@ const Carousel = ({ title, products, dark = false }) => {
         dark ? "bg-slate-800" : "bg-slate-100"
       } lg:flex items-center py-5`}
     >
-      <div className="flex-fullcenter title w-full text-center px-8 max-lg:py-5">
+      <div className="flex-fullcenter title lg:w-36 w-full text-center px-8 max-lg:py-5">
         <h2 className={dark ? "text-slate-200" : ""}>{title}</h2>
       </div>
       <div dir="ltr">
         <Splide
           aria-label="Tesla Hero Slider"
           options={{
-            perPage: 4,
             perMove: 1,
             arrows: false,
             pagination: false,
@@ -24,7 +23,7 @@ const Carousel = ({ title, products, dark = false }) => {
             updateOnMove: true,
             breakpoints: {
               1640: {
-                perPage: 4,
+                perPage: 12,
               },
               1024: {
                 perPage: 3,
