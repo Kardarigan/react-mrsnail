@@ -1,4 +1,4 @@
-import { Splide, SplideSlide } from "@splidejs/react-splide";
+import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import { Card } from "../Portal";
 import "@splidejs/react-splide/css";
 
@@ -26,9 +26,11 @@ const Carousel = ({ title, products, dark = false }) => {
           options={{
             perMove: 1,
             arrows: false,
+            autoplay: true,
             pagination: false,
             gap: "2em",
             omitEnd: true,
+            perPage: 6,
             breakpoints: {
               1440: {
                 perPage: 4,
@@ -44,7 +46,7 @@ const Carousel = ({ title, products, dark = false }) => {
         >
           {products.map((item, index) => {
             return (
-              <SplideSlide key={index}>
+              <SplideSlide key={index} data-splide-interval="1500">
                 <Card product={item} />
               </SplideSlide>
             );
