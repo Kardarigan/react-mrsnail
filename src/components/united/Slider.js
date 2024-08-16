@@ -8,12 +8,7 @@ const Slider = ({ things }) => {
   return (
     <section>
       <Splide
-        options={{
-          type: "fade",
-          rewind: true,
-          autoplay: true,
-          arrows: false,
-        }}
+        options={{ type: "fade", rewind: true, autoplay: true, arrows: false }}
       >
         {things.map((item, index) => {
           const even = Boolean(index % 2);

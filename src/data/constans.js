@@ -497,3 +497,5 @@ export const contact = {
     },
   ],
 };
+
+export const sorts = ["آخرین", "ارزانترین", "گرانترین"];

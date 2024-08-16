@@ -1,6 +1,12 @@
+import { useState } from "react";
+import { sorts } from "../../data/constans";
 import { Card } from "../Portal";
 
 const Overview = ({ things, filters }) => {
+  const [sort, setSort] = useState(0);
+  const handleSort = (index) => {
+    setSort(index);
+  };
   return (
     <section className="pagecenter padding-y max-md:px-5">
       <div className="flex-seperate max-sm:flex-col mb-5">
@@ -18,7 +24,23 @@ const Overview = ({ things, filters }) => {
             })}
           </select>
         </div>
-        d
+        <div className="flex items-center">
+          {sorts.map((item, index) => {
+            return (
+              <button
+                key={index}
+                onClick={() => handleSort(index)}
+                className={`transition-all px-10 py-3 ${
+                  index == sort
+                    ? "bg-slate-300 text-slate-900"
+                    : "bg-slate-800 text-slate-100"
+                }`}
+              >
+                {item}
+              </button>
+            );
+          })}
+        </div>
       </div>
       <div className="grid gap-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2">
         {things.map((card, index) => {

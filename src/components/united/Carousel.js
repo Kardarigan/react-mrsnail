@@ -25,6 +25,7 @@ const Carousel = ({ title, products, dark = false }) => {
           aria-label="Tesla Hero Slider"
           options={{
             perMove: 1,
+            type: "loop",
             arrows: false,
             autoplay: true,
             pagination: false,
@@ -46,7 +47,7 @@ const Carousel = ({ title, products, dark = false }) => {
         >
           {products.map((item, index) => {
             return (
-              <SplideSlide key={index} data-splide-interval="1500">
+              <SplideSlide key={index} data-splide-interval="1000">
                 <Card product={item} />
               </SplideSlide>
             );
