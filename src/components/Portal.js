@@ -17,7 +17,7 @@ import Boxes from "./company/Boxes";
 import Policy from "./company/Policy";
 import Blog from "./blog/Blog";
 import Blog_Card from "./blog/Blog_Card";
-import Blogs from "./blog/Blogs";
+import All_Blogs from "./blog/All_Blogs";
 import Tip from "./united/Tip";
 import Loading from "./united/Loading";
 import All_Products from "./product/All_Products";
@@ -30,7 +30,7 @@ export {
   Tip,
   Blog,
   Blog_Card,
-  Blogs,
+  All_Blogs,
   Policy,
   Boxes,
   Contact,

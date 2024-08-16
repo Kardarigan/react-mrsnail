@@ -7,9 +7,9 @@ const Home = () => {
     <>
       <Hero thing={hero.home} />
       <Category />
-      <Carousel title="تازه ترین کالاها" products={products} />
+      <Carousel title="تازه ترین کالاها" things={products} />
       <Slider things={homeSlide} />
-      <Carousel title="محبوب ترین کالاها" products={products} />
+      <Carousel title="محبوب ترین کالاها" things={products} />
       <Articles thing={articles.home} />
     </>
   );

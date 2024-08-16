@@ -1,12 +1,17 @@
-import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { Card } from "../Portal";
 import "@splidejs/react-splide/css";
 
-const Carousel = ({ title, products, dark = false }) => {
-  console.log(products.length);
-
+const Carousel = ({
+  title,
+  things,
+  type = "product",
+  dark = false,
+  id = null,
+}) => {
   return (
     <section
+      id={id}
       className={`paddin ${
         dark ? "bg-slate-800" : "bg-slate-100"
       } items-center p-5`}
@@ -45,10 +50,10 @@ const Carousel = ({ title, products, dark = false }) => {
             },
           }}
         >
-          {products.map((item, index) => {
+          {things.map((item, index) => {
             return (
-              <SplideSlide key={index} data-splide-interval="1000">
-                <Card product={item} />
+              <SplideSlide key={index} data-splide-interval="2000">
+                <Card thing={item} type={type} />
               </SplideSlide>
             );
           })}

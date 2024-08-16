@@ -1,8 +1,7 @@
 import { useState } from "react";
-import { sorts } from "../../data/constans";
 import { Card } from "../Portal";
 
-const Overview = ({ things, filters }) => {
+const Overview = ({ things, type = "product", sortOptions, filters }) => {
   const [sort, setSort] = useState(0);
   const handleSort = (index) => {
     setSort(index);
@@ -25,7 +24,7 @@ const Overview = ({ things, filters }) => {
           </select>
         </div>
         <div className="flex items-center">
-          {sorts.map((item, index) => {
+          {sortOptions.map((item, index) => {
             return (
               <button
                 key={index}
@@ -44,7 +43,7 @@ const Overview = ({ things, filters }) => {
       </div>
       <div className="grid gap-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2">
         {things.map((card, index) => {
-          return <Card product={card} />;
+          return <Card thing={card} type={type} />;
         })}
       </div>
     </section>

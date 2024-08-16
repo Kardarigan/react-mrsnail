@@ -6,6 +6,7 @@ import {
   Layout,
   Policy,
   All_Products,
+  All_Blogs,
 } from "./components/Portal";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/policy" element={<Policy />} />
           <Route path="/products" element={<All_Products />} />
+          <Route path="/blog" element={<All_Blogs />} />
         </Route>
       </Routes>
     </Router>

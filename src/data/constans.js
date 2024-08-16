@@ -2,6 +2,7 @@ import category_1 from "../asset/images/cateogry_1.png";
 import Hero_1 from "../asset/images/20240428_045027.jpg";
 import News_1 from "../asset/images/1343307.png";
 import Logo_1 from "../asset/images/64e6177329c2d71389b1b219_walmart.png";
+import blogs from "./blogs";
 
 export const navbar = [
   {
@@ -133,6 +134,51 @@ export const social = [
 ];
 
 export const categories = [
+  {
+    cover: category_1,
+    alt: "توضیحات تصویر کاور",
+    bgColor: "#0F172A",
+    label: "باکس ها",
+    path: "",
+  },
+  {
+    cover: category_1,
+    alt: "توضیحات تصویر کاور",
+    bgColor: "#0F172A",
+    label: "خزنده ها و موش ها",
+    path: "",
+  },
+  {
+    cover: category_1,
+    alt: "توضیحات تصویر کاور",
+    bgColor: "#0F172A",
+    label: "مکمل تقویتی و دارو",
+    path: "",
+  },
+  {
+    cover: category_1,
+    alt: "توضیحات تصویر کاور",
+    bgColor: "#0F172A",
+    label: "خاک و بستر",
+    path: "",
+  },
+  {
+    cover: category_1,
+    alt: "توضیحات تصویر کاور",
+    bgColor: "#0F172A",
+    label: "ملزومات و تجهیزات",
+    path: "",
+  },
+  {
+    cover: category_1,
+    alt: "توضیحات تصویر کاور",
+    bgColor: "#0F172A",
+    label: "خوراک ها",
+    path: "",
+  },
+];
+
+export const blogCategories = [
   {
     cover: category_1,
     alt: "توضیحات تصویر کاور",
@@ -345,6 +391,11 @@ export const hero = {
     title: "تمام کالا ها رو میتونی اینجا پیدا کنی",
     path: "#firstSection",
   },
+  blogs: {
+    cover: Hero_1,
+    title: "تمام کالا ها رو میتونی اینجا پیدا کنی",
+    path: "#firstSection",
+  },
 };
 
 export const middle = {
@@ -360,7 +411,7 @@ export const middle = {
 export const half = {
   about: [
     {
-      title: "فعالیت ما تو چه حوزه ای هست؟",
+      title: "کار ما تو چه زمینه‌ای هست؟",
       describe:
         "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.",
       cover: News_1,
@@ -498,4 +549,7 @@ export const contact = {
   ],
 };
 
-export const sorts = ["آخرین", "ارزانترین", "گرانترین"];
+export const sorts = {
+  products: ["آخرین", "ارزانترین", "گرانترین"],
+  blogs: ["آخرین", "خونده شده ترین"],
+};
