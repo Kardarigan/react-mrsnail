@@ -34,7 +34,7 @@ const Form = ({ fields, submit = "ارسال" }) => {
           );
         })}
       </div>
-      <button className="button button-light mt-5" type="submit">
+      <button className="button button-sky mt-5" type="submit">
         {submit}
       </button>
     </form>

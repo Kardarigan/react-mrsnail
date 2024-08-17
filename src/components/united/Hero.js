@@ -11,7 +11,10 @@ const Hero = ({ thing }) => {
         />
         <div className="absolute right-0 top-20 m-12 max-w-[550px] text-yellow-50">
           <h2 className="title-sup">{thing.title}</h2>
-          <p className="mt-5 max-md:text-xs">{thing.subtitle}</p>
+          <p
+            className="mt-5 max-md:text-xs"
+            dangerouslySetInnerHTML={{ __html: thing.subtitle }}
+          />
         </div>
       </a>
     </section>

@@ -123,13 +123,13 @@ export const social = [
   },
   {
     path: "/",
-    iconClass: "fa-youtube",
-    colorClass: "hover:bg-red-600",
+    iconClass: "fa-whatsapp",
+    colorClass: "hover:bg-green-500",
   },
   {
     path: "/",
-    iconClass: "fa-x-twitter",
-    colorClass: "hover:bg-black",
+    iconClass: "fa-telegram",
+    colorClass: "hover:bg-sky-500",
   },
 ];
 
@@ -367,7 +367,8 @@ export const hero = {
   home: {
     cover: Hero_1,
     title: "فکر میکنم حلزونت از ما خوشش بیاد!",
-    subtitle: "میخوای خدمات حلوزنیمون رو ببینی؟ اگه آره کلیک کن تا شروع کنیم.",
+    subtitle:
+      "میخوای خدمات حلوزنیمون رو ببینی؟<br>اگه آره کلیک کن تا شروع کنیم.",
     path: "#firstSection",
   },
   About: {
@@ -454,12 +455,12 @@ export const contact = {
         },
         {
           icon: "fa-duotone fa-solid fa-mobile",
-          label: "همراه",
+          label: "همراه (حلزون)",
           describe: "+1 518 879 654",
         },
         {
           icon: "fa-duotone fa-solid fa-mobile",
-          label: "همراه",
+          label: "همراه (خزنده)",
           describe: "+1 518 879 654",
         },
         {
