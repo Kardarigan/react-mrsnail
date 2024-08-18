@@ -7,7 +7,7 @@ const Overview = ({ things, type = "product", sortOptions, filters }) => {
     setSort(index);
   };
   return (
-    <section className="pagecenter padding-y max-md:px-5">
+    <section className="pagecenter padding-y max-xl:px-5">
       <div className="flex-seperate max-sm:flex-col mb-5">
         <div className="flex items-center gap-2">
           <label htmlFor="category" className="label">
@@ -23,7 +23,7 @@ const Overview = ({ things, type = "product", sortOptions, filters }) => {
             })}
           </select>
         </div>
-        <div className="flex items-center">
+        <div className="flex items-center max-sm:min-w-full">
           {sortOptions.map((item, index) => {
             return (
               <button

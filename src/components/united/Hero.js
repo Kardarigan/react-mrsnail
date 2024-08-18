@@ -3,7 +3,7 @@ import React from "react";
 const Hero = ({ thing }) => {
   return (
     <section>
-      <a href={thing.path} className="relative">
+      <a href={thing?.path} className="relative">
         <img
           src={thing.cover}
           alt="Hero Image"

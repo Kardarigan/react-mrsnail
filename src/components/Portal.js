@@ -16,20 +16,20 @@ import Contact from "./company/Contact";
 import Boxes from "./company/Boxes";
 import Policy from "./company/Policy";
 import Blog from "./blog/Blog";
-import Blog_Card from "./blog/Blog_Card";
 import All_Blogs from "./blog/All_Blogs";
 import Tip from "./united/Tip";
 import Loading from "./united/Loading";
 import All_Products from "./product/All_Products";
 import Overview from "./united/Overview";
+import Product from "./product/Product";
 
 export {
+  Product,
   Overview,
   All_Products,
   Loading,
   Tip,
   Blog,
-  Blog_Card,
   All_Blogs,
   Policy,
   Boxes,

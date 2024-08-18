@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 
 const Card = ({ thing, type = "product" }) => {
+  const path = "/" + type + "/" + thing.title.split(" ").join("-");
+
   return (
-    <Link to={thing.path} dir="rtl">
+    <Link to={path} dir="rtl">
       <div className="bg-slate-900 p-2 group">
         <div className="overflow-hidden relative group">
           <img

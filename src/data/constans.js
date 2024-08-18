@@ -11,7 +11,7 @@ export const navbar = [
   },
   {
     label: "محصولات",
-    path: "/products",
+    path: "/product",
   },
   {
     label: "تماس با ما",
