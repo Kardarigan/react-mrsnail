@@ -30,7 +30,7 @@ const Overview = ({ things, type = "product", sortOptions, filters }) => {
                 key={index}
                 onClick={() => handleSort(index)}
                 className={`transition-all px-10 py-3 ${
-                  index == sort
+                  index === sort
                     ? "bg-slate-300 text-slate-900"
                     : "bg-slate-800 text-slate-100"
                 }`}

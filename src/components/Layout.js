@@ -3,12 +3,11 @@ import { Navbar, Footer, Loading } from "./Portal";
 import { useState, useEffect, useRef } from "react";
 
 const Layout = () => {
-  const [loading, setLoading] = useState(false); // Start with loading false
+  const [loading, setLoading] = useState(false);
   const location = useLocation();
   const prevPathname = useRef(location.pathname);
 
   useEffect(() => {
-    // Only set loading if the pathname has changed
     if (prevPathname.current !== location.pathname) {
       setLoading(true);
       prevPathname.current = location.pathname;
@@ -21,7 +20,7 @@ const Layout = () => {
 
       return () => clearTimeout(loadTimeout);
     }
-  }, [location.pathname]); // Only trigger on pathname changes
+  }, [location.pathname]);
 
   return (
     <>

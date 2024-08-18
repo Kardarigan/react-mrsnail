@@ -8,12 +8,12 @@ const Card = ({ thing, type = "product" }) => {
       <div className="bg-slate-900 p-2 group">
         <div className="overflow-hidden relative group">
           <img
-            src={thing.cover}
+            src={type === "blog" ? thing.cover : thing.covers[0]}
             alt={thing.title}
             className="group-hover:scale-125 transition-all"
           />
         </div>
-        {type == "product" ? (
+        {type === "product" ? (
           <div className="text-slate-50 px-3 py-2 title-sm text-right flex-fullcenter">
             <h5>{thing.title}</h5>
             <div className="text-center">

@@ -6,9 +6,14 @@ const Slider = ({ things }) => {
   const [btnTheme, setBtnTheme] = useState("light");
 
   return (
-    <section>
+    <section dir="ltr">
       <Splide
-        options={{ type: "fade", rewind: true, autoplay: true, arrows: false }}
+        options={{
+          type: "fade",
+          rewind: true,
+          autoplay: true,
+          arrows: false,
+        }}
       >
         {things.map((item, index) => {
           const even = Boolean(index % 2);
