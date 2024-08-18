@@ -1,21 +1,26 @@
+import React, { useRef, useEffect } from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
-import { useRef } from "react";
 
 const Gallery = ({ product }) => {
-  const mainRef = useRef();
-  const handleThumbs = (id) => {
-    if (mainRef.current) {
-      mainRef.current.go(id);
+  const mainSliderRef = useRef(null);
+  const thumbnailSliderRef = useRef(null);
+
+  useEffect(() => {
+    if (mainSliderRef.current && thumbnailSliderRef.current) {
+      mainSliderRef.current.sync(thumbnailSliderRef.current.splide);
     }
-  };
+  }, []);
+
   return (
     <div dir="ltr" className="padding">
       <Splide
+        ref={mainSliderRef}
+        id="mainSlider"
         options={{
           type: "loop",
           rewind: true,
+          pagination: false,
         }}
-        ref={mainRef}
       >
         {product.covers.map((item, index) => {
           return (
@@ -25,26 +30,28 @@ const Gallery = ({ product }) => {
           );
         })}
       </Splide>
+
       <Splide
+        ref={thumbnailSliderRef}
+        id="thumgnailSlider"
         className="mt-4"
         options={{
           type: "loop",
-          perPage: 4,
           gap: "1em",
           rewind: true,
           arrows: false,
           pagination: false,
+          isNavigation: true,
+          focus: "center",
+          fixedWidth: 100,
+          fixedHeight: 100,
+          cover: true,
         }}
       >
         {product.covers.map((item, index) => {
           return (
             <SplideSlide key={index}>
-              <img
-                onClick={() => handleThumbs(index)}
-                src={item}
-                alt={`banner ${index}`}
-                className="size-full"
-              />
+              <img src={item} alt={`banner ${index}`} className="size-full" />
             </SplideSlide>
           );
         })}

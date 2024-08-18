@@ -8,7 +8,7 @@ const Product = () => {
   const theProduct = products.find((e) => e && e.title === path);
   return (
     <>
-      <section className="flex">
+      <section className="lg:flex">
         <div className="lg:w-1/2">
           <Gallery product={theProduct} />
         </div>

@@ -4,13 +4,11 @@ h3 {
   @apply font-bold;
 }
 
-.my-carousel-progress {
-  background: #ccc;
-}
-
-.my-carousel-progress-bar {
-  background: greenyellow;
-  height: 2px;
-  transition: width 400ms ease;
-  width: 0;
+.splide__arrow {
+  border-radius: 0 !important;
+  background-color: rgb(2 6 23) !important;
+  opacity: 50%;
+  svg {
+    fill: rgb(100 116 139) !important;
+  }
 }
