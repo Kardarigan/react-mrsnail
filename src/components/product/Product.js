@@ -8,11 +8,11 @@ const Product = () => {
   const theProduct = products.find((e) => e && e.title === path);
   return (
     <>
-      <section className="lg:flex">
-        <div className="lg:w-1/2">
+      <section className="lg:flex gap-12 padding">
+        <div className="lg:w-2/5">
           <Gallery product={theProduct} />
         </div>
-        <div className="lg:w-1/2">
+        <div className="lg:w-3/5">
           <Over product={theProduct} />
         </div>
       </section>

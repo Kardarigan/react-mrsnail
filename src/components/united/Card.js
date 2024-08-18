@@ -21,9 +21,7 @@ const Card = ({ thing, type = "product" }) => {
                 <span className="para-lil me-1">تومان</span>
                 {thing.price}
               </h6>
-              <span className="para bg-slate-100 text-slate-900 px-4">
-                {thing.category}
-              </span>
+              <span className="para mark mark-light">{thing.category}</span>
             </div>
           </div>
         ) : (
@@ -33,7 +31,7 @@ const Card = ({ thing, type = "product" }) => {
               {thing.article[0].paragraph}
             </p>
             <div className="flex-seperate">
-              <span className="bg-slate-100 text-slate-900 px-1 font-extrabold">
+              <span className="mark mark-light font-extrabold">
                 {thing.category}
               </span>
               <span>{thing.date}</span>

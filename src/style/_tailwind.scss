@@ -95,6 +95,16 @@
       }
     }
   }
+  .mark {
+    @apply px-3 py-1;
+    &-dark {
+      @apply bg-slate-900 text-slate-100;
+    }
+    &-light {
+      @apply bg-slate-100 text-slate-900;
+    }
+  }
+
   .box {
     @apply bg-slate-900 text-slate-100 p-12;
     h2 {

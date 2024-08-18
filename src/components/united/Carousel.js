@@ -17,11 +17,7 @@ const Carousel = ({
       } items-center p-5`}
     >
       <div className="flex-fullcenter title w-full text-center px-8 pt-1 pb-5 max-lg:py-5">
-        <h2
-          className={`${
-            dark ? "bg-slate-200 text-slate-800" : "text-slate-200 bg-slate-800"
-          } px-5 py-1`}
-        >
+        <h2 className={`mark ${dark ? "mark-light" : "mark-dark"} px-5 py-1`}>
           {title}
         </h2>
       </div>

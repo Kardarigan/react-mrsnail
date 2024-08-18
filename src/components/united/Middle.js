@@ -12,10 +12,8 @@ const Middle = ({ thing, id = null, dark = false, reverse = false }) => {
         <div className="lg:w-2/5 w-full lg:px-10">
           <h5>{thing.topic}</h5>
           <h2
-            className={`title text-center mt-1 mb-3 py-1 ${
-              dark
-                ? "bg-slate-100 text-slate-900"
-                : "bg-slate-900 text-slate-100"
+            className={`title text-center mt-1 mb-3 mark ${
+              dark ? "mark-light" : "mark-dark"
             }`}
           >
             {thing.title}

@@ -554,3 +554,16 @@ export const sorts = {
   products: ["آخرین", "ارزانترین", "گرانترین"],
   blogs: ["آخرین", "خونده شده ترین"],
 };
+
+export const orderLink = [
+  {
+    label: "پیام در تلگرام",
+    icon: "fa-brands fa-telegram",
+    path: "/",
+  },
+  {
+    label: "تماس",
+    icon: "fa-solid fa-phone",
+    path: "/",
+  },
+];

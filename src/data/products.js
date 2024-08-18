@@ -3,7 +3,6 @@ import Product_1 from "../asset/products/1000021259.jpg";
 export const products = [
   {
     title: "مکمل خزنده حلزونیکال",
-    path: "",
     covers: [Product_1, Product_1, Product_1, Product_1, Product_1],
     category: "مکمل",
     describe:
@@ -12,7 +11,6 @@ export const products = [
   },
   {
     title: "مکمل خزنده حلزونیکال",
-    path: "",
     covers: [Product_1, Product_1, Product_1, Product_1, Product_1],
     category: "مکمل",
     describe:
@@ -21,7 +19,6 @@ export const products = [
   },
   {
     title: "مکمل خزنده حلزونیکال",
-    path: "",
     covers: [Product_1, Product_1, Product_1, Product_1, Product_1],
     category: "مکمل",
     describe:
@@ -30,7 +27,6 @@ export const products = [
   },
   {
     title: "مکمل خزنده حلزونیکال",
-    path: "",
     covers: [Product_1, Product_1, Product_1, Product_1, Product_1],
     category: "مکمل",
     describe:
@@ -39,7 +35,6 @@ export const products = [
   },
   {
     title: "مکمل خزنده حلزونیکال",
-    path: "",
     covers: [Product_1, Product_1, Product_1, Product_1, Product_1],
     category: "مکمل",
     describe:
@@ -48,7 +43,6 @@ export const products = [
   },
   {
     title: "مکمل خزنده حلزونیکال",
-    path: "",
     covers: [Product_1, Product_1, Product_1, Product_1, Product_1],
     category: "مکمل",
     describe:
@@ -57,7 +51,6 @@ export const products = [
   },
   {
     title: "مکمل خزنده حلزونیکال",
-    path: "",
     covers: [Product_1, Product_1, Product_1, Product_1, Product_1],
     category: "مکمل",
     describe:
@@ -66,7 +59,6 @@ export const products = [
   },
   {
     title: "مکمل خزنده حلزونیکال",
-    path: "",
     covers: [Product_1, Product_1, Product_1, Product_1, Product_1],
     category: "مکمل",
     describe:
@@ -75,7 +67,6 @@ export const products = [
   },
   {
     title: "مکمل خزنده حلزونیکال",
-    path: "",
     covers: [Product_1, Product_1, Product_1, Product_1, Product_1],
     category: "مکمل",
     describe:
@@ -84,7 +75,6 @@ export const products = [
   },
   {
     title: "مکمل خزنده حلزونیکال",
-    path: "",
     covers: [Product_1, Product_1, Product_1, Product_1, Product_1],
     category: "مکمل",
     describe:

@@ -12,9 +12,7 @@ const Footer = () => {
           {footer.links.map((item, index) => {
             return (
               <div key={index}>
-                <h3 className="para text-slate-900 bg-slate-100 md:inline px-1">
-                  {item.title}
-                </h3>
+                <h3 className="para mark mark-light md:inline">{item.title}</h3>
                 <ul className="para-sm mt-3 grid gap-y-3">
                   {item.links.map((link, index) => {
                     return (

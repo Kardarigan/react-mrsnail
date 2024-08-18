@@ -12,7 +12,7 @@ const Gallery = ({ product }) => {
   }, []);
 
   return (
-    <div dir="ltr" className="padding">
+    <div dir="ltr">
       <Splide
         ref={mainSliderRef}
         id="mainSlider"
