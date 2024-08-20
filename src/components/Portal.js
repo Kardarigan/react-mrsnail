@@ -25,13 +25,11 @@ import Product from "./product/Product";
 import Details from "./product/Details";
 import Gallery from "./product/Gallery";
 import Over from "./product/Over";
-import Familiar from "./product/Familiar";
 
 export {
   Details,
   Gallery,
   Over,
-  Familiar,
   Product,
   Overview,
   All_Products,

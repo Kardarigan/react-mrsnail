@@ -4,11 +4,11 @@ const Details = ({ product }) => {
       <div className="flex max-lg:flex-col gap-28 max-w-[1000px] mx-auto">
         <div className="lg:w-1/2">
           <h2 className="title-sm">توضیحات کالا:</h2>
-          <p className="para mt-2 text-justify">{product.describe}</p>
+          <p className="para mt-5 text-justify">{product.describe}</p>
         </div>
         <div className="lg:w-1/2">
           <h2 className="title-sm">مشخصات کالا:</h2>
-          <ul className="grid gap-y-5 mt-2">
+          <ul className="grid gap-y-5 mt-5">
             {product.specs.map((item, index) => {
               return (
                 <>

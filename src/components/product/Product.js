@@ -1,11 +1,18 @@
 import { useParams } from "react-router-dom";
 import { products } from "../../data/products";
-import { Details, Familiar, Gallery, Over } from "../Portal";
+import { Articles, Carousel, Details, Gallery, Over } from "../Portal";
+import { articles } from "../../data/constans";
 
 const Product = () => {
   const { product } = useParams();
   const path = product.split("-").join(" ");
   const theProduct = products.find((e) => e && e.title === path);
+
+  const familiar = products.filter(
+    (item) => item.category === theProduct.category
+  );
+  const sameBrand = products.filter((item) => item.brand === theProduct.brand);
+
   return (
     <>
       <section className="lg:flex gap-12 padding">
@@ -17,7 +24,13 @@ const Product = () => {
         </div>
       </section>
       <Details product={theProduct} />
-      <Familiar product={theProduct} />
+      <Carousel things={familiar} title="کالا های مشابه" />
+      <Carousel
+        things={sameBrand}
+        title={`کالا های دیگر ${theProduct.brand}`}
+        dark
+      />
+      <Articles thing={articles.product} />
     </>
   );
 };

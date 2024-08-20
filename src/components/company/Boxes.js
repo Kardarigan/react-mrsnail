@@ -23,7 +23,7 @@ const Boxes = () => {
                         </div>
                         <span dir="ltr">{item.describe}</span>
                       </li>
-                      {index + 1 != box.items.length && (
+                      {index + 1 !== box.items.length && (
                         <hr className="mx-12 opacity-50" />
                       )}
                     </>
