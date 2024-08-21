@@ -23,6 +23,7 @@ function App() {
           <Route path="/product" element={<All_Products />} />
           <Route path="/product/:product" element={<Product />} />
           <Route path="/blog" element={<All_Blogs />} />
+          <Route path="/blog/:blog" element={<Blog />} />
         </Route>
       </Routes>
     </Router>

@@ -25,8 +25,10 @@ import Product from "./product/Product";
 import Details from "./product/Details";
 import Gallery from "./product/Gallery";
 import Over from "./product/Over";
+import blog_control from "./blog/blog_control";
 
 export {
+  blog_control,
   Details,
   Gallery,
   Over,
