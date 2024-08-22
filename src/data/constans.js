@@ -578,3 +578,27 @@ export const orderLink = [
     path: "/",
   },
 ];
+export const blogControl = {
+  shareButtons: [
+    {
+      title: "اشتراک با واتساپ",
+      icon: "fa-brands fa-whatsapp",
+      href: "",
+    },
+    {
+      title: "اشتراک با اینستاگرام",
+      icon: "fa-brands fa-instagram",
+      href: "",
+    },
+    {
+      title: "اشتراک با تلگرام",
+      icon: "fa-brands fa-telegram",
+      href: "",
+    },
+    {
+      title: "اشتراک گذاری",
+      icon: "fa-regular fa-share-nodes",
+      href: "",
+    },
+  ],
+};

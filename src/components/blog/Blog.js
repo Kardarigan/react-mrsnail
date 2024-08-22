@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { blogs } from "../../data/blogs";
-import { Hero } from "../Portal";
+import { Blog_Control, Blog_Main, Hero } from "../Portal";
 
 const Blog = () => {
   const { blog } = useParams();
@@ -16,7 +16,8 @@ const Blog = () => {
   return (
     <>
       <Hero thing={heroData} />
-      <blog_conrol thing={}/>
+      <Blog_Control blog={theBlog} />
+      <Blog_Main blog={theBlog} />
     </>
   );
 };

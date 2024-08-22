@@ -25,10 +25,12 @@ import Product from "./product/Product";
 import Details from "./product/Details";
 import Gallery from "./product/Gallery";
 import Over from "./product/Over";
-import blog_control from "./blog/blog_control";
+import Blog_Control from "./blog/Blog_Control";
+import Blog_Main from "./blog/Blog_Main";
 
 export {
-  blog_control,
+  Blog_Main,
+  Blog_Control,
   Details,
   Gallery,
   Over,
