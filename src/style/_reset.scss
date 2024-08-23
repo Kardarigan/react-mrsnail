@@ -3,7 +3,11 @@ h2,
 h3 {
   @apply font-bold;
 }
-
+.ul {
+  &::marker {
+    @apply text-slate-900;
+  }
+}
 .splide__arrow {
   border-radius: 0 !important;
   background-color: rgb(2 6 23) !important;
