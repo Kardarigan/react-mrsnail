@@ -11,7 +11,7 @@ const Blog_Side = ({ blog }) => {
       setCopied(true);
       setTimeout(() => {
         alert("لینک مقاله کپی شد!");
-      }, 1);
+      }, 500);
     } catch (err) {
       console.error("Unable to copy to clipboard:", err);
     }
@@ -22,7 +22,7 @@ const Blog_Side = ({ blog }) => {
       <div className="box sticky top-10">
         <h1 className="title-sm">{blog.title}</h1>
         <div className="flex-seperate gap-x-3 bg-slate-500 mt-5 w-full">
-          <button onClick={handleCopyClick} className="bg-slate-700 size-10">
+          <button onClick={handleCopyClick} className="bg-slate-700 size-12">
             {copied ? (
               <i class="fa-sharp fa-solid fa-check text-2xl" />
             ) : (

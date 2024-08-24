@@ -9,6 +9,7 @@ import {
   All_Blogs,
   Blog,
   Product,
+  Rule,
 } from "./components/Portal";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/policy" element={<Policy />} />
+          <Route path="/policy/:rule" element={<Rule />} />
           <Route path="/product" element={<All_Products />} />
           <Route path="/product/:product" element={<Product />} />
           <Route path="/blog" element={<All_Blogs />} />

@@ -29,8 +29,12 @@ import Blog_Control from "./blog/Blog_Control";
 import Blog_Main from "./blog/Blog_Main";
 import Accordion from "./united/Accordion";
 import Blog_Side from "./blog/Blog_Side";
+import Rules from "./company/Rules";
+import Rule from "./company/Rule";
 
 export {
+  Rule,
+  Rules,
   Blog_Side,
   Accordion,
   Blog_Main,

@@ -1,6 +1,5 @@
 import { articles, hero } from "../../data/constans";
-import { Articles, Hero } from "../Portal";
-import Rules from "./Rules";
+import { Articles, Hero, Rules } from "../Portal";
 
 const Policy = () => {
   return (
