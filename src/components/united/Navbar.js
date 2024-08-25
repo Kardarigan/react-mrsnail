@@ -1,14 +1,28 @@
 import { Link, NavLink } from "react-router-dom";
 import Logo from "../../asset/images/cropped_image.png";
 import { footer, navbar, navmenu } from "../../data/constans";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { Hamburger } from "../Portal";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [hamburger, setHamburger] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 768) {
+        setHamburger(false);
+      }
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <>
-      <header className="bg-slate-900 md:px-5">
+      <header className="bg-slate-900 md:px-5 max-lg:sticky top-0 z-20">
         <div className="pagecenter flex-seperate max-md:px-5 text-slate-100 py-3">
           <Link to="/" className="name">
             <div></div>
@@ -25,6 +39,18 @@ const Navbar = () => {
             <div></div>
             <h1 className="py-2">آقای حلزون</h1>
           </Link>
+          <button
+            className={`md:hidden flex-fullcenter text-xl size-10 ${
+              hamburger ? "" : "bg-slate-800"
+            }`}
+            onClick={() => setHamburger(!hamburger)}
+          >
+            <i
+              className={`fas fa-sharp fa-bars transition-all ${
+                hamburger ? "rotate-90" : ""
+              }`}
+            />
+          </button>
         </div>
       </header>
       <nav className="bg-slate-100 px-5">
@@ -88,6 +114,13 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
+      <section
+        className={`displayTrans fixed ${
+          hamburger ? "visible opacity-100" : "invisible opacity-0"
+        } w-screen h-[calc(100%-64px)] top-[64px] z-20 bg-slate-900`}
+      >
+        <Hamburger />
+      </section>
     </>
   );
 };

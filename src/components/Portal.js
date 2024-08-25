@@ -31,8 +31,10 @@ import Accordion from "./united/Accordion";
 import Blog_Side from "./blog/Blog_Side";
 import Rules from "./company/Rules";
 import Rule from "./company/Rule";
+import Hamburger from "./united/Hamburger";
 
 export {
+  Hamburger,
   Rule,
   Rules,
   Blog_Side,
