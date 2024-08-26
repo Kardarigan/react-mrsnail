@@ -1,14 +1,18 @@
-import { categories } from "../../data/constans";
 import { Link } from "react-router-dom";
 
-const Category = () => {
+const Category = ({ things }) => {
   return (
     <section id="firstSection">
-      <div className="pagecenter p-5">
+      <div className="pagecenter px-5 py-10">
         <div className="grid md:grid-cols-6 grid-cols-3 md:gap-12 gap-5">
-          {categories.map((item, index) => {
+          {things.map((item, index) => {
+            const even = index % 2;
             return (
-              <Link to={item.path} key={index} className="text-center">
+              <Link
+                to={item.path}
+                key={index}
+                className={`text-center ${even ? "md:mt-12" : "max-md:mt-12"}`}
+              >
                 <img
                   src={item.cover}
                   alt={item.alt}

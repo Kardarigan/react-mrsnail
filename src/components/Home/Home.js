@@ -1,5 +1,5 @@
 import { Hero, Articles, Carousel, Category, Slider } from "../Portal";
-import { articles, hero, homeSlide } from "../../data/constans";
+import { articles, categories, hero, homeSlide } from "../../data/constans";
 import { products } from "../../data/products";
 import { Link } from "react-router-dom";
 
@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <>
       <Hero thing={hero.home} />
-      <Category />
+      <Category things={categories} />
       <section className="overflow-hidden">
         <Link to={hero.snail.path} className="relative group">
           <img

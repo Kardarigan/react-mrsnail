@@ -16,13 +16,18 @@ const Slider = ({ things }) => {
         }}
       >
         {things.map((item, index) => {
-          const even = Boolean(index % 2);
+          const inTwo = Boolean(index % 2);
+          const inThree = Boolean(index % 3);
 
           return (
             <SplideSlide key={index}>
               <section
-                className={`size-screen flex${
-                  even ? " justify-center text-center" : ""
+                className={`size-screen flex ${
+                  inTwo
+                    ? "justify-center text-center"
+                    : inThree
+                    ? "justify-end text-end"
+                    : "justify-start text-start"
                 } items-center padding-x bg-slate-900 center-bg`}
                 style={{
                   backgroundImage: "url(" + item.background + ")",
@@ -34,8 +39,12 @@ const Slider = ({ things }) => {
                     <p className="mt-3">{item.subtitle}</p>
                   </div>
                   <div
-                    className={`flex${
-                      even ? " justify-center" : ""
+                    className={`flex ${
+                      inTwo
+                        ? "justify-center"
+                        : inThree
+                        ? "justify-end"
+                        : "justify-start"
                     } max-md:flex-col gap-5 mt-5`}
                   >
                     {item.buttons.map((button, index) => {

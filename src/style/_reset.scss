@@ -8,11 +8,18 @@ h3 {
     @apply text-slate-900;
   }
 }
-.splide__arrow {
-  border-radius: 0 !important;
-  background-color: rgb(2 6 23) !important;
-  opacity: 50%;
-  svg {
-    fill: rgb(100 116 139) !important;
+
+.splide {
+  &__pagination__page {
+    width: 20px !important;
+    border-radius: 0 !important;
+  }
+  &__arrow {
+    border-radius: 0 !important;
+    background-color: rgb(2 6 23) !important;
+    opacity: 50%;
+    svg {
+      fill: rgb(100 116 139) !important;
+    }
   }
 }
