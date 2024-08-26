@@ -10,6 +10,7 @@ import {
   Blog,
   Product,
   Rule,
+  Snail,
 } from "./components/Portal";
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Route path="/product/:product" element={<Product />} />
           <Route path="/blog" element={<All_Blogs />} />
           <Route path="/blog/:blog" element={<Blog />} />
+          <Route path="/snail" element={<Snail />} />
         </Route>
       </Routes>
     </Router>

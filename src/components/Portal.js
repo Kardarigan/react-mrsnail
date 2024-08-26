@@ -32,8 +32,10 @@ import Blog_Side from "./blog/Blog_Side";
 import Rules from "./company/Rules";
 import Rule from "./company/Rule";
 import Hamburger from "./united/Hamburger";
+import Snail from "./Home/Snail";
 
 export {
+  Snail,
   Hamburger,
   Rule,
   Rules,

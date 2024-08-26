@@ -1,5 +1,3 @@
-import React from "react";
-
 const Hero = ({ thing }) => {
   return (
     <section>
@@ -9,7 +7,7 @@ const Hero = ({ thing }) => {
           alt="Hero Image"
           className="center-obj w-full max-h-[80vh] bg-slate-900"
         />
-        <div className="absolute right-0 top-20 m-12 max-w-[550px] text-yellow-50">
+        <div className="absolute right-0 top-20 m-12 max-w-[550px] text-slate-50">
           <h2 className="title-sup">{thing.title}</h2>
           <p
             className="mt-5 max-md:text-xs"

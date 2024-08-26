@@ -1,12 +1,21 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import Logo from "../../asset/images/cropped_image.png";
-import { footer, navbar, navmenu } from "../../data/constans";
-import { useEffect, useState } from "react";
+import { navbar, navmenu } from "../../data/constans";
+import { useEffect, useRef, useState } from "react";
 import { Hamburger } from "../Portal";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [hamburger, setHamburger] = useState(false);
+  const location = useLocation();
+  const prevPathname = useRef(location.pathname);
+
+  useEffect(() => {
+    if (prevPathname.current !== location.pathname) {
+      prevPathname.current = location.pathname;
+      setHamburger(false);
+    }
+  }, [location.pathname]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -84,7 +93,7 @@ const Navbar = () => {
               onMouseOut={() => setMenuOpen(false)}
               className="font-bold relative px-3 py-1 flex max-md:hidden items-center bg-slate-900 text-slate-100 transition-all"
             >
-              <span className="hover:text-yellow-200">
+              <span className="hover:text-slate-400">
                 دسته بندی ها
                 <i class="fas fa-solid fa-bars ms-2" />
               </span>
@@ -102,7 +111,7 @@ const Navbar = () => {
                           menuOpen ? "" : `translate-y-[-100%]`
                         }`}
                       >
-                        <Link to={item.path} className="hover:text-yellow-200">
+                        <Link to={item.path} className="hover:text-slate-400">
                           {item.label}
                         </Link>
                       </li>

@@ -356,11 +356,16 @@ export const hero = {
       "میخوای خدمات حلوزنیمون رو ببینی؟<br>اگه آره کلیک کن تا شروع کنیم.",
     path: "#firstSection",
   },
+  snail: {
+    cover: Hero_1,
+    title: "بخش حلزون ها اینجاست!",
+    subtitle: "یه بخش فقط برای حلزون ها",
+    path: "/snail",
+  },
   About: {
     cover: Hero_1,
     title: "آقای حلزون",
     subtitle: "همونی که حلزونت میخواد!",
-    path: "#firstSection",
   },
   Policy: {
     cover: Hero_1,
