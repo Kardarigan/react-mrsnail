@@ -1,4 +1,4 @@
-import category_1 from "../asset/images/cateogry_1.png";
+import category_1 from "../asset/images/category/cateogry_mokamel.png";
 import News_1 from "../asset/images/1343307.png";
 import Product_1 from "../asset/products/1000021259.jpg";
 

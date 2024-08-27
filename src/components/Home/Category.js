@@ -13,14 +13,16 @@ const Category = ({ things }) => {
                 key={index}
                 className={`text-center ${even ? "md:mt-12" : "max-md:mt-12"}`}
               >
-                <img
-                  src={item.cover}
-                  alt={item.alt}
-                  className="rounded-full w-52"
-                  style={{
-                    backgroundColor: item.bgColor,
-                  }}
-                />
+                <div className="rounded-full overflow-hidden">
+                  <img
+                    src={item.cover}
+                    alt={item.alt}
+                    className="w-52 p-5"
+                    style={{
+                      backgroundColor: item.bgColor,
+                    }}
+                  />
+                </div>
                 <h5 className="para font-extrabold leading-5 mt-1">
                   {item.label}
                 </h5>

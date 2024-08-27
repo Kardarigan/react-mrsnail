@@ -1,4 +1,11 @@
-import category_1 from "../asset/images/cateogry_1.png";
+// --------------------[category
+import category_moosh from "../asset/images/category/cateogry_moosh.png";
+import category_mokamel from "../asset/images/category/cateogry_mokamel.png";
+import category_khak from "../asset/images/category/cateogry_khak.png";
+import cateogry_khorak from "../asset/images/category/cateogry_khorak.png";
+import cateogry_box from "../asset/images/category/cateogry_box.png";
+import cateogry_essentials from "../asset/images/category/cateogry_essentials.png";
+// --------------------[hero
 import Hero_1 from "../asset/images/20240428_045027.jpg";
 import News_1 from "../asset/images/1343307.png";
 import Logo_1 from "../asset/images/64e6177329c2d71389b1b219_walmart.png";
@@ -138,42 +145,42 @@ export const social = [
 
 export const categories = [
   {
-    cover: category_1,
+    cover: cateogry_box,
     alt: "توضیحات تصویر کاور",
     bgColor: "#0F172A",
     label: "باکس ها",
     path: "",
   },
   {
-    cover: category_1,
+    cover: category_moosh,
     alt: "توضیحات تصویر کاور",
     bgColor: "#0F172A",
     label: "خزنده ها و موش ها",
     path: "",
   },
   {
-    cover: category_1,
+    cover: category_mokamel,
     alt: "توضیحات تصویر کاور",
     bgColor: "#0F172A",
     label: "مکمل تقویتی و دارو",
     path: "",
   },
   {
-    cover: category_1,
+    cover: category_khak,
     alt: "توضیحات تصویر کاور",
     bgColor: "#0F172A",
     label: "خاک و بستر",
     path: "",
   },
   {
-    cover: category_1,
+    cover: cateogry_essentials,
     alt: "توضیحات تصویر کاور",
     bgColor: "#0F172A",
     label: "ملزومات و تجهیزات",
     path: "",
   },
   {
-    cover: category_1,
+    cover: cateogry_khorak,
     alt: "توضیحات تصویر کاور",
     bgColor: "#0F172A",
     label: "خوراک ها",
@@ -183,42 +190,42 @@ export const categories = [
 
 export const blogCategories = [
   {
-    cover: category_1,
+    cover: category_mokamel,
     alt: "توضیحات تصویر کاور",
     bgColor: "#0F172A",
     label: "باکس ها",
     path: "",
   },
   {
-    cover: category_1,
+    cover: category_mokamel,
     alt: "توضیحات تصویر کاور",
     bgColor: "#0F172A",
     label: "خزنده ها و موش ها",
     path: "",
   },
   {
-    cover: category_1,
+    cover: category_mokamel,
     alt: "توضیحات تصویر کاور",
     bgColor: "#0F172A",
     label: "مکمل تقویتی و دارو",
     path: "",
   },
   {
-    cover: category_1,
+    cover: category_mokamel,
     alt: "توضیحات تصویر کاور",
     bgColor: "#0F172A",
     label: "خاک و بستر",
     path: "",
   },
   {
-    cover: category_1,
+    cover: category_mokamel,
     alt: "توضیحات تصویر کاور",
     bgColor: "#0F172A",
     label: "ملزومات و تجهیزات",
     path: "",
   },
   {
-    cover: category_1,
+    cover: category_mokamel,
     alt: "توضیحات تصویر کاور",
     bgColor: "#0F172A",
     label: "خوراک ها",
