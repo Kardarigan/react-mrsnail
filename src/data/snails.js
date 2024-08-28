@@ -1,48 +1,48 @@
-import category_1 from "../asset/images/category/cateogry_mokamel.png";
+// --------------------[category
+import category_achatina from "../asset/images/category/cateogry_achatina.png";
+import category_unique from "../asset/images/category/category_unique.png";
+import category_mokamel from "../asset/images/category/cateogry_mokamel.png";
+import category_khak from "../asset/images/category/cateogry_khak.png";
+
+// --------------------[category
+
 import News_1 from "../asset/images/1343307.png";
 import Product_1 from "../asset/products/1000021259.jpg";
 
 export const categories = [
   {
-    cover: category_1,
-    alt: "توضیحات تصویر کاور",
+    cover: category_unique,
+    alt: "Unique Snails",
     bgColor: "#0F172A",
-    label: "باکس ها",
+    label: "کلکسیونی، کمیاب، سفارشی",
     path: "",
   },
   {
-    cover: category_1,
-    alt: "توضیحات تصویر کاور",
+    cover: category_achatina,
+    alt: "Achatina Snial",
     bgColor: "#0F172A",
-    label: "خزنده ها و موش ها",
+    label: "حلزون آچاتینا",
     path: "",
   },
   {
-    cover: category_1,
-    alt: "توضیحات تصویر کاور",
+    cover: category_unique,
+    alt: "Scargo Snail",
     bgColor: "#0F172A",
-    label: "مکمل تقویتی و دارو",
+    label: "حلزون اسکارگو",
     path: "",
   },
   {
-    cover: category_1,
-    alt: "توضیحات تصویر کاور",
+    cover: category_mokamel,
+    alt: "Supplements & Calcium",
+    bgColor: "#0F172A",
+    label: "مکمل و کلسیم",
+    path: "",
+  },
+  {
+    cover: category_khak,
+    alt: "Soil and Substrate",
     bgColor: "#0F172A",
     label: "خاک و بستر",
-    path: "",
-  },
-  {
-    cover: category_1,
-    alt: "توضیحات تصویر کاور",
-    bgColor: "#0F172A",
-    label: "ملزومات و تجهیزات",
-    path: "",
-  },
-  {
-    cover: category_1,
-    alt: "توضیحات تصویر کاور",
-    bgColor: "#0F172A",
-    label: "خوراک ها",
     path: "",
   },
 ];

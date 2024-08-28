@@ -1,31 +1,42 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Category = ({ things }) => {
+  const basis = "md:basis-1/" + (things.length + 0);
   return (
     <section id="firstSection">
       <div className="pagecenter px-5 py-10">
-        <div className="grid md:grid-cols-6 grid-cols-3 md:gap-12 gap-5">
+        <div className="flex justify-center flex-wrap">
           {things.map((item, index) => {
             const even = index % 2;
+            const length = things.length;
             return (
               <Link
                 to={item.path}
                 key={index}
-                className={`text-center ${even ? "md:mt-12" : "max-md:mt-12"}`}
+                className={`text-center ${
+                  index + 1 == length
+                    ? "md:mt-12"
+                    : even
+                    ? "md:mt-12"
+                    : "max-md:mt-12"
+                } ${basis} basis-1/3`}
               >
-                <div className="rounded-full overflow-hidden">
-                  <img
-                    src={item.cover}
-                    alt={item.alt}
-                    className="w-52 p-5"
-                    style={{
-                      backgroundColor: item.bgColor,
-                    }}
-                  />
+                <div className="p-3">
+                  <div className="rounded-full overflow-hidden">
+                    <img
+                      src={item.cover}
+                      alt={item.alt}
+                      className="p-5"
+                      style={{
+                        backgroundColor: item.bgColor,
+                      }}
+                    />
+                  </div>
+                  <h5 className="para font-extrabold leading-5 mt-1">
+                    {item.label}
+                  </h5>
                 </div>
-                <h5 className="para font-extrabold leading-5 mt-1">
-                  {item.label}
-                </h5>
               </Link>
             );
           })}
