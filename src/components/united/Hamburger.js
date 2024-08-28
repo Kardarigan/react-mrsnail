@@ -19,7 +19,7 @@ const Hamburger = () => {
             );
           })}
         </ul>
-        <h3 className="mt-8 mb-3">دسته بندی ها</h3>
+        <h3 className="mt-5 mb-2">دسته بندی ها</h3>
         <ul className="grid gap-y-3">
           {navmenu.map((item, index) => {
             return (

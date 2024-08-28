@@ -40,19 +40,28 @@ export const navbar = [
 
 export const navmenu = [
   {
-    label: "دسته بندی",
+    label: "باکس ها",
     path: "/",
   },
   {
-    label: "دسته بندی",
+    label: "خزنده ها و موش ها",
     path: "/",
   },
   {
-    label: "دسته بندی",
+    label: "مکمل تقویتی و دارو",
     path: "/",
   },
   {
-    label: "دسته بندی",
+    label: "خاک و بستر",
+    path: "/",
+  },
+
+  {
+    label: "ملزومات و تجهیزات",
+    path: "/",
+  },
+  {
+    label: "خوراک ها",
     path: "/",
   },
 ];

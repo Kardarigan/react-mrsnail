@@ -102,12 +102,12 @@ const Navbar = () => {
                   menuOpen ? "visible opacity-100" : "invisible opacity-0"
                 }`}
               >
-                <ul>
+                <ul className="text-xs">
                   {navmenu.map((item, index) => {
                     return (
                       <li
                         key={index}
-                        className={`bg-slate-900 mt-1 transition-all ${
+                        className={`bg-slate-900 mt-1 p-2 transition-all ${
                           menuOpen ? "" : `translate-y-[-100%]`
                         }`}
                       >
