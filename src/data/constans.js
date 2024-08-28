@@ -6,8 +6,17 @@ import cateogry_khorak from "../asset/images/category/cateogry_khorak.png";
 import cateogry_box from "../asset/images/category/cateogry_box.png";
 import cateogry_essentials from "../asset/images/category/cateogry_essentials.png";
 // --------------------[hero
+import hero_home from "../asset/images/hero/hero_home.jpg";
+import hero_blog from "../asset/images/hero/hero_blog.png";
+import hero_product from "../asset/images/hero/hero_product.png";
+import hero_about from "../asset/images/hero/hero_about.webp";
+import hero_hq from "../asset/images/hero/hero_hq.webp";
+// --------------------[special
+import special_1 from "../asset/images/special/special_1.jpg";
+import special_2 from "../asset/images/special/special_2.png";
+import special_3 from "../asset/images/special/special_3.webp";
+
 import Hero_1 from "../asset/images/20240428_045027.jpg";
-import News_1 from "../asset/images/1343307.png";
 import Logo_1 from "../asset/images/64e6177329c2d71389b1b219_walmart.png";
 
 export const navbar = [
@@ -235,9 +244,9 @@ export const blogCategories = [
 
 export const homeSlide = [
   {
-    title: "بزرگترین رویداد حلزونی در تاریخ ایران",
+    title: "فستیوال تراریوم و خانه ی حلزون",
     subtitle: "برای شرکت در این رویداد همین اکنون پیام بده",
-    background: News_1,
+    background: special_1,
     colorClass: "text-slate-50",
     buttons: [
       {
@@ -253,7 +262,7 @@ export const homeSlide = [
   {
     title: "بزرگترین رویداد حلزونی در تاریخ ایران",
     subtitle: "برای شرکت در این رویداد همین اکنون پیام بده",
-    background: News_1,
+    background: special_2,
     colorClass: "text-slate-50",
     buttons: [
       {
@@ -267,17 +276,13 @@ export const homeSlide = [
     ],
   },
   {
-    title: "بزرگترین رویداد حلزونی در تاریخ ایران",
-    subtitle: "برای شرکت در این رویداد همین اکنون پیام بده",
-    background: News_1,
+    title: "یه حلزون میتونه حیوون خونگی باشه؟",
+    subtitle: "پیشنهادی ترین مقاله ی ماه",
+    background: special_3,
     colorClass: "text-slate-50",
     buttons: [
       {
-        label: "ارسال پیام",
-        path: "/",
-      },
-      {
-        label: "جزییات رویداد",
+        label: "مشاهده ی مقاله",
         path: "/",
       },
     ],
@@ -373,7 +378,7 @@ export const articles = {
 
 export const hero = {
   home: {
-    cover: Hero_1,
+    cover: hero_home,
     title: "فکر میکنم حلزونت از ما خوشش بیاد!",
     subtitle:
       "میخوای خدمات حلوزنیمون رو ببینی؟<br>اگه آره کلیک کن تا شروع کنیم.",
@@ -385,13 +390,13 @@ export const hero = {
     path: "/snail",
   },
   snailHero: {
-    cover: Hero_1,
+    cover: hero_hq,
     title: "اینجا مخصوص حلزوناست!",
     subtitle: "یه بخش فقط برای حلزون ها",
     path: "#firstSection",
   },
   About: {
-    cover: Hero_1,
+    cover: hero_about,
     title: "آقای حلزون",
     subtitle: "همونی که حلزونت میخواد!",
   },
@@ -406,13 +411,13 @@ export const hero = {
     subtitle: "جهت سفارش یا هر کار دیگه که داری میتونی ازین فرم استفاده کنی.",
   },
   products: {
-    cover: Hero_1,
+    cover: hero_product,
     title: "تمام کالا ها رو میتونی اینجا پیدا کنی",
     path: "#firstSection",
   },
   blogs: {
-    cover: Hero_1,
-    title: "تمام کالا ها رو میتونی اینجا پیدا کنی",
+    cover: hero_blog,
+    title: "هر چیزی که باید درمورد یه حلزون ها بدونی",
     path: "#firstSection",
   },
 };
@@ -433,7 +438,7 @@ export const half = {
       title: "کار ما تو چه زمینه‌ای هست؟",
       describe:
         "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.",
-      cover: News_1,
+      cover: special_2,
     },
   ],
 };

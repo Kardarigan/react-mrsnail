@@ -6,7 +6,7 @@ import category_khak from "../asset/images/category/cateogry_khak.png";
 
 // --------------------[category
 
-import News_1 from "../asset/images/1343307.png";
+import News_1 from "../asset/images/special/special_1.jpg";
 import Product_1 from "../asset/products/1000021259.jpg";
 
 export const categories = [

@@ -15,8 +15,8 @@ const Category = ({ things }) => {
                 to={item.path}
                 key={index}
                 className={`text-center ${
-                  index + 1 == length
-                    ? "md:mt-12"
+                  index + 1 == length && index % 2 !== 1
+                    ? ""
                     : even
                     ? "md:mt-12"
                     : "max-md:mt-12"
