@@ -11,6 +11,7 @@ import hero_blog from "../asset/images/hero/hero_blog.png";
 import hero_product from "../asset/images/hero/hero_product.png";
 import hero_about from "../asset/images/hero/hero_about.webp";
 import hero_hq from "../asset/images/hero/hero_hq.webp";
+import hero_snail from "../asset/images/hero/hero_snail.webp";
 // --------------------[special
 import special_1 from "../asset/images/special/special_1.jpg";
 import special_2 from "../asset/images/special/special_2.png";
@@ -166,21 +167,24 @@ export const categories = [
     cover: cateogry_box,
     alt: "توضیحات تصویر کاور",
     bgColor: "#0F172A",
-    label: "باکس ها",
+    label: "باکس‌ها",
+    englishLabel: "Box of Reptiles",
     path: "",
   },
   {
     cover: category_moosh,
     alt: "توضیحات تصویر کاور",
     bgColor: "#0F172A",
-    label: "خزنده ها و موش ها",
+    label: "خزنده‌ها و موش‌ها",
+    englishLabel: "Reptiles & Mice",
     path: "",
   },
   {
     cover: category_mokamel,
     alt: "توضیحات تصویر کاور",
     bgColor: "#0F172A",
-    label: "مکمل تقویتی و دارو",
+    label: "مکمل و کلسیم",
+    englishLabel: "Supplements & Calcium",
     path: "",
   },
   {
@@ -188,6 +192,7 @@ export const categories = [
     alt: "توضیحات تصویر کاور",
     bgColor: "#0F172A",
     label: "خاک و بستر",
+    englishLabel: "Soil & Substrate",
     path: "",
   },
   {
@@ -195,13 +200,15 @@ export const categories = [
     alt: "توضیحات تصویر کاور",
     bgColor: "#0F172A",
     label: "ملزومات و تجهیزات",
+    englishLabel: "Essentials",
     path: "",
   },
   {
     cover: cateogry_khorak,
     alt: "توضیحات تصویر کاور",
     bgColor: "#0F172A",
-    label: "خوراک ها",
+    label: "خوراک‌ها",
+    englishLabel: "Foods",
     path: "",
   },
 ];
@@ -394,7 +401,7 @@ export const hero = {
     path: "#firstSection",
   },
   snail: {
-    cover: Hero_1,
+    cover: hero_snail,
     title: "بخش حلزون ها اینجاست!",
     path: "/snail",
   },

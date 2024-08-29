@@ -13,10 +13,12 @@ const Home = () => {
           <img
             src={hero.snail.cover}
             alt="Hero Image"
-            className="center-obj w-full max-h-screen bg-slate-900 transition-all group-hover:scale-125"
+            className="center-obj w-full max-h-screen bg-slate-900 transition-all duration-1000 group-hover:scale-125"
           />
-          <div className="absolute size-full top-0 text-center flex-fullcenter mix-blend-difference">
-            <h2 className="title-sup max-w-[500px]">{hero.snail.title}</h2>
+          <div className="absolute size-full top-0 text-center flex-fullcenter text-slate-50 mix-blend-difference">
+            <h2 className="title-sup max-w-[500px] drop-shadow(11px 1px 1px black">
+              {hero.snail.title}
+            </h2>
           </div>
         </Link>
       </section>
