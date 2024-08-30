@@ -65,7 +65,7 @@ const Overview = ({ things, type = "product", sortOptions, filters }) => {
         </div>
       </div>
       <div className="grid gap-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2">
-        {currentThings.map((card, index) => {
+        {currentThings.map((card) => {
           return <Card thing={card} type={type} />;
         })}
       </div>

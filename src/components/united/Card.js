@@ -15,7 +15,7 @@ const Card = ({ thing, type = "product" }) => {
         </div>
         {type === "product" ? (
           <div className="text-slate-50 px-3 py-2 title-sm text-right flex-fullcenter">
-            <h5 className="truncate">{thing.title}</h5>
+            <h5 className="line-clamp-2">{thing.title}</h5>
             <div className="text-center">
               <h6 className="whitespace-nowrap flex items-center">
                 <span className="para-lil me-1">تومان</span>

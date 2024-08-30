@@ -1,5 +1,5 @@
-import { categories, hero, sorts } from "../../data/constans";
-import { products } from "../../data/products";
+import { hero, sorts } from "../../data/constans";
+import { categories, products } from "../../data/products";
 import { Carousel, Hero, Overview } from "../Portal";
 
 const All_Products = () => {
