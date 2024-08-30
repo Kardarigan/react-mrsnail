@@ -213,51 +213,6 @@ export const categories = [
   },
 ];
 
-export const blogCategories = [
-  {
-    cover: category_mokamel,
-    alt: "توضیحات تصویر کاور",
-    bgColor: "#0F172A",
-    label: "باکس ها",
-    path: "",
-  },
-  {
-    cover: category_mokamel,
-    alt: "توضیحات تصویر کاور",
-    bgColor: "#0F172A",
-    label: "خزنده ها و موش ها",
-    path: "",
-  },
-  {
-    cover: category_mokamel,
-    alt: "توضیحات تصویر کاور",
-    bgColor: "#0F172A",
-    label: "مکمل تقویتی و دارو",
-    path: "",
-  },
-  {
-    cover: category_mokamel,
-    alt: "توضیحات تصویر کاور",
-    bgColor: "#0F172A",
-    label: "خاک و بستر",
-    path: "",
-  },
-  {
-    cover: category_mokamel,
-    alt: "توضیحات تصویر کاور",
-    bgColor: "#0F172A",
-    label: "ملزومات و تجهیزات",
-    path: "",
-  },
-  {
-    cover: category_mokamel,
-    alt: "توضیحات تصویر کاور",
-    bgColor: "#0F172A",
-    label: "خوراک ها",
-    path: "",
-  },
-];
-
 export const homeSlide = [
   {
     title: "فستیوال تراریوم و خانه ی حلزون",
@@ -591,7 +546,7 @@ export const contact = {
 
 export const sorts = {
   products: ["آخرین", "ارزانترین", "گرانترین"],
-  blogs: ["آخرین", "خونده شده ترین"],
+  blogs: ["آخرین", "پیشنهاد شده ترین"],
 };
 
 export const orderLink = [

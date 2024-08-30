@@ -1,5 +1,5 @@
-import { blogs } from "../../data/blogs";
-import { blogCategories, hero, sorts } from "../../data/constans";
+import { blogs, categories } from "../../data/blogs";
+import { hero, sorts } from "../../data/constans";
 import { Carousel, Hero, Overview } from "../Portal";
 
 const Blogs = () => {
@@ -17,7 +17,7 @@ const Blogs = () => {
         things={blogs}
         type="blog"
         sortOptions={sorts.blogs}
-        filters={blogCategories}
+        filters={categories}
       />
     </>
   );

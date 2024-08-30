@@ -1,5 +1,7 @@
 import Cover_1 from "../asset/images/20240428_045027.jpg";
 
+export const categories = ["آموزشی", "تفننی"];
+
 export const blogs = [
   {
     title: "یه حلزون چیا نیاز داره؟",
@@ -7,6 +9,7 @@ export const blogs = [
     coverLabel: "جایگاه توضیحی کوتاه درمورد تصویر کاور اصلی مقاله",
     category: "آموزشی",
     date: "17 مرداد 1403",
+    suggested: 8,
     article: [
       {
         title: "مقدمه",
@@ -74,6 +77,7 @@ export const blogs = [
     coverLabel: "جایگاه توضیحی کوتاه درمورد تصویر کاور اصلی مقاله",
     category: "تفننی",
     date: "17 شهریور 1403",
+    suggested: 12,
     article: [
       {
         title: "مقدمه",

@@ -1,11 +1,29 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { Card } from "../Portal";
 
 const Overview = ({ things, type = "product", sortOptions, filters }) => {
   const [sort, setSort] = useState(0);
-  const handleSort = (index) => {
-    setSort(index);
+  const [category, setCategory] = useState("همه");
+  const handleCategoryChange = () => {
+    let selectedCategory = document.getElementById("category").value;
+    setCategory(selectedCategory);
   };
+  const currentThings = useMemo(() => {
+    let sortedThings = [...things];
+
+    if (sort === 0) {
+      sortedThings.reverse();
+    } else if (sort === 2) {
+      sortedThings.sort((a, b) => a.suggested - b.suggested);
+    }
+
+    if (category !== "همه") {
+      sortedThings = sortedThings.filter((blog) => blog.category === category);
+    }
+
+    return sortedThings;
+  }, [sort, category]);
+
   return (
     <section className="pagecenter padding-y max-xl:px-5">
       <div className="flex-seperate max-sm:flex-col mb-5">
@@ -13,11 +31,16 @@ const Overview = ({ things, type = "product", sortOptions, filters }) => {
           <label htmlFor="category" className="label">
             دسته‌بندی:
           </label>
-          <select id="category" className="field min-w-52 max-sm:min-w-72">
+          <select
+            id="category"
+            className="field min-w-52 max-sm:min-w-72"
+            onChange={handleCategoryChange}
+          >
+            <option value="همه">همه</option>
             {filters.map((item, index) => {
               return (
-                <option key={index} value={item.label}>
-                  {item.label}
+                <option key={index} value={item}>
+                  {item}
                 </option>
               );
             })}
@@ -28,7 +51,7 @@ const Overview = ({ things, type = "product", sortOptions, filters }) => {
             return (
               <button
                 key={index}
-                onClick={() => handleSort(index)}
+                onClick={() => setSort(index)}
                 className={`transition-all px-10 py-3 ${
                   index === sort
                     ? "bg-slate-300 text-slate-900"
@@ -42,7 +65,7 @@ const Overview = ({ things, type = "product", sortOptions, filters }) => {
         </div>
       </div>
       <div className="grid gap-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2">
-        {things.map((card, index) => {
+        {currentThings.map((card, index) => {
           return <Card thing={card} type={type} />;
         })}
       </div>

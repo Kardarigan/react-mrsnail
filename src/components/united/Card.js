@@ -15,7 +15,7 @@ const Card = ({ thing, type = "product" }) => {
         </div>
         {type === "product" ? (
           <div className="text-slate-50 px-3 py-2 title-sm text-right flex-fullcenter">
-            <h5>{thing.title}</h5>
+            <h5 className="truncate">{thing.title}</h5>
             <div className="text-center">
               <h6 className="whitespace-nowrap flex items-center">
                 <span className="para-lil me-1">تومان</span>
@@ -26,7 +26,7 @@ const Card = ({ thing, type = "product" }) => {
           </div>
         ) : (
           <div className="text-slate-50 px-3 pt-2 para-lil text-right">
-            <h6 className="title-sm">{thing.title}</h6>
+            <h5 className="title-sm truncate ">{thing.title}</h5>
             <p className="line-clamp-2 text-ellipsis my-2 transition-all text-slate-400 group-hover:text-slate-200">
               {thing.article[0].paragraph}
             </p>
