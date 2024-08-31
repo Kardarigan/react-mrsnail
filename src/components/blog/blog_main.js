@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Accordion, Blog_Side } from "../Portal";
 
 const blog_main = ({ blog }) => {
@@ -34,10 +35,47 @@ const blog_main = ({ blog }) => {
                         })}
                       </ul>
                     )}
+                    {item.links && (
+                      <ul className="grid gap-y-2 mt-5 font-bold">
+                        {item.links.map((item, index) => {
+                          const path = "/blog/" + item.split(" ").join("-");
+                          return (
+                            <li key={index}>
+                              <Link
+                                to={path}
+                                className="underline hover:no-underline transition-all"
+                              >
+                                {item}
+                              </Link>
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    )}
                   </article>
                 );
               })}
             </div>
+            {blog.nextOnes && (
+              <div className="my-24">
+                <h3>خواندن این مقالات را شدیدا پیشنهاد میکنیم :</h3>
+                <ul className="grid gap-y-2 mt-5 font-bold para-sm">
+                  {blog.nextOnes.map((item, index) => {
+                    const path = "/blog/" + item.split(" ").join("-");
+                    return (
+                      <li key={index}>
+                        <Link
+                          to={path}
+                          className="underline hover:no-underline transition-all"
+                        >
+                          {item}
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            )}
             {blog.faq && (
               <>
                 <hr className="mt-8 mb-12" />

@@ -1,13 +1,15 @@
-import Product_1 from "../asset/products/1000021259.jpg";
+import albino_1 from "../asset/products/snails/albino/cover-1.jpg";
+import albino_2 from "../asset/products/snails/albino/cover-2.jpg";
+import albino_3 from "../asset/products/snails/albino/cover-3.jpg";
+import albino_4 from "../asset/products/snails/albino/cover-4.jpg";
 
 export const categories = ["مکمل"];
 
 export const products = [
   {
-    title: "مکمل خزنده حلزونیکال",
-    covers: [Product_1, Product_1, Product_1, Product_1, Product_1],
-    category: "مکمل",
-    brand: "حلزونیکال",
+    title: "حلزون آلبینو",
+    covers: [albino_1, albino_2, albino_3, albino_4],
+    category: "حلزون آچاتینا",
     describe:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.",
     specs: [
@@ -21,7 +23,8 @@ export const products = [
   },
   {
     title: "مکمل خزنده حلزونیکال",
-    covers: [Product_1, Product_1, Product_1, Product_1, Product_1],
+    covers: [albino_1, albino_2, albino_3, albino_4],
+
     category: "مکمل",
     brand: "حلزونیکال",
     describe:

@@ -10,7 +10,9 @@ const Card = ({ thing, type = "product" }) => {
           <img
             src={type === "blog" ? thing.cover : thing.covers[0]}
             alt={thing.title}
-            className="group-hover:scale-125 transition-all"
+            className={`group-hover:scale-125 transition-all center-obj w-full ${
+              type == "product" ? "h-72" : "h-52"
+            }`}
           />
         </div>
         {type === "product" ? (

@@ -8,14 +8,14 @@ const Over = ({ product }) => {
       <h1 className="title-lg">{product.title}</h1>
       <div>
         <h2>دسته بندی : {product.category}</h2>
-        <h2>برند محصول : {product.brand}</h2>
+        {product.brand && <h2>برند محصول : {product.brand}</h2>}
       </div>
       <div className="">
         <h2 className="title mark mark-dark inline">
           قیمت : {product.price} هزار تومن
         </h2>
         <p className="label mt-12">
-          اگه تعداد بالا میخوای توی تلگرام پیام بده، در غیر این صورت بزنگ!
+          برای تعداد پایین تلگرام پیام دهید, در غیر اینصورت لطفا زنگ بزنید!
         </p>
         <div className="flex max-md:flex-col gap-2 mt-2">
           {orderLink.map((button, index) => {

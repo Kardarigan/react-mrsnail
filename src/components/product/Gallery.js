@@ -20,12 +20,17 @@ const Gallery = ({ product }) => {
           type: "loop",
           rewind: true,
           pagination: false,
+          height: 500,
         }}
       >
         {product.covers.map((item, index) => {
           return (
             <SplideSlide key={index}>
-              <img src={item} alt={`banner ${index}`} className="size-full" />
+              <img
+                src={item}
+                alt={`banner ${index}`}
+                className="size-full center-obj"
+              />
             </SplideSlide>
           );
         })}

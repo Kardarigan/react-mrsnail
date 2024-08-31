@@ -436,7 +436,7 @@ export const about = {
 };
 
 export const contact = {
-  hint: "میتونی بجای تماس گرفتن، از <a href='#form'>این فرم</a> استفاده کنی",
+  hint: "میتونی بجای تماس گرفتن، از <a href='#form' class='underline'>این فرم</a> استفاده کنی",
   formHint: "خوشت نیومد؟ برگرد به صفحه ی <a href='/contact'>ارتباط با ما</a>",
   boxes: [
     {
@@ -450,12 +450,12 @@ export const contact = {
         {
           icon: "fa-duotone fa-solid fa-mobile",
           label: "همراه (حلزون)",
-          describe: "+1 518 879 654",
+          describe: "+98 933-572-0649",
         },
         {
           icon: "fa-duotone fa-solid fa-mobile",
           label: "همراه (خزنده)",
-          describe: "+1 518 879 654",
+          describe: "+98 933-572-0649",
         },
         {
           icon: "fa-duotone fa-solid fa-envelope",
@@ -553,12 +553,12 @@ export const orderLink = [
   {
     label: "پیام در تلگرام",
     icon: "fa-brands fa-telegram",
-    path: "/",
+    path: "https://t.me/m_r_snail",
   },
   {
     label: "تماس",
     icon: "fa-solid fa-phone",
-    path: "/",
+    path: "tel:+989335720649",
   },
 ];
 
