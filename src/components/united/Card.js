@@ -16,14 +16,14 @@ const Card = ({ thing, type = "product" }) => {
           />
         </div>
         {type === "product" ? (
-          <div className="text-slate-50 px-3 py-2 title-sm text-right flex-fullcenter">
+          <div className="text-slate-50 px-3 py-2 title-sm text-right flex-seperate">
             <h5 className="line-clamp-2">{thing.title}</h5>
-            <div className="text-center">
-              <h6 className="whitespace-nowrap flex items-center">
+            <div className="text-end">
+              <h6 className="whitespace-nowrap flex justify-end items-center">
                 <span className="para-lil me-1">تومان</span>
                 {thing.price}
               </h6>
-              <span className="para mark mark-light">{thing.category}</span>
+              <span className="para-sm mark mark-light">{thing.category}</span>
             </div>
           </div>
         ) : (

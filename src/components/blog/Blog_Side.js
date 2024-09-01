@@ -3,8 +3,13 @@ import { useRef, useState } from "react";
 const Blog_Side = ({ blog }) => {
   const linkElement = useRef();
   const [copied, setCopied] = useState(false);
-  const pageLink = decodeURIComponent(window.location.href);
+  const pageUrl = decodeURIComponent(window.location.href);
 
+  const removeFragmentIdentifier = (url) => {
+    return url.split("#")[0];
+  };
+
+  const pageLink = removeFragmentIdentifier(pageUrl);
   const handleCopyClick = async () => {
     try {
       await navigator.clipboard.writeText(linkElement.current.textContent);
