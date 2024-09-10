@@ -169,7 +169,12 @@ export const categories = [
     bgColor: "#0F172A",
     label: "باکس‌ها",
     englishLabel: "Box of Reptiles",
-    path: "",
+    hero: {
+      cover: hero_home,
+      title: "باکس‌ها",
+      subtitle: "جایگاه زیر نویس الکی برای این بخش مربوط به دسته بندی",
+      path: "#firstSection",
+    },
   },
   {
     cover: category_moosh,
@@ -177,7 +182,12 @@ export const categories = [
     bgColor: "#0F172A",
     label: "خزنده‌ها و موش‌ها",
     englishLabel: "Reptiles & Mice",
-    path: "",
+    hero: {
+      cover: hero_home,
+      title: "خزنده‌ها و موش‌ها",
+      subtitle: "جایگاه زیر نویس الکی برای این بخش مربوط به دسته بندی",
+      path: "#firstSection",
+    },
   },
   {
     cover: category_mokamel,
@@ -185,7 +195,12 @@ export const categories = [
     bgColor: "#0F172A",
     label: "مکمل و کلسیم",
     englishLabel: "Supplements & Calcium",
-    path: "",
+    hero: {
+      cover: hero_home,
+      title: "مکمل و کلسیم",
+      subtitle: "جایگاه زیر نویس الکی برای این بخش مربوط به دسته بندی",
+      path: "#firstSection",
+    },
   },
   {
     cover: category_khak,
@@ -193,7 +208,12 @@ export const categories = [
     bgColor: "#0F172A",
     label: "خاک و بستر",
     englishLabel: "Soil & Substrate",
-    path: "",
+    hero: {
+      cover: hero_home,
+      title: "خاک و بستر",
+      subtitle: "جایگاه زیر نویس الکی برای این بخش مربوط به دسته بندی",
+      path: "#firstSection",
+    },
   },
   {
     cover: cateogry_essentials,
@@ -201,7 +221,12 @@ export const categories = [
     bgColor: "#0F172A",
     label: "ملزومات و تجهیزات",
     englishLabel: "Essentials",
-    path: "",
+    hero: {
+      cover: hero_home,
+      title: "ملزومات و تجهیزات",
+      subtitle: "جایگاه زیر نویس الکی برای این بخش مربوط به دسته بندی",
+      path: "#firstSection",
+    },
   },
   {
     cover: cateogry_khorak,
@@ -209,7 +234,12 @@ export const categories = [
     bgColor: "#0F172A",
     label: "خوراک‌ها",
     englishLabel: "Foods",
-    path: "",
+    hero: {
+      cover: hero_home,
+      title: "خوراک‌ها",
+      subtitle: "جایگاه زیر نویس الکی برای این بخش مربوط به دسته بندی",
+      path: "#firstSection",
+    },
   },
 ];
 

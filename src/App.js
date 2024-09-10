@@ -11,6 +11,7 @@ import {
   Product,
   Rule,
   Snail,
+  Ex_Category,
 } from "./components/Portal";
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
           <Route path="/blog" element={<All_Blogs />} />
           <Route path="/blog/:blog" element={<Blog />} />
           <Route path="/snail" element={<Snail />} />
+          <Route path="/:category" element={<Ex_Category />} />
         </Route>
       </Routes>
     </Router>

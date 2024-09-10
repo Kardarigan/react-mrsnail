@@ -33,8 +33,10 @@ import Rules from "./company/Rules";
 import Rule from "./company/Rule";
 import Hamburger from "./united/Hamburger";
 import Snail from "./Home/Snail";
+import Ex_Category from "./product/Ex_Category";
 
 export {
+  Ex_Category,
   Snail,
   Hamburger,
   Rule,

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Category = ({ things }) => {
@@ -9,6 +8,7 @@ const Category = ({ things }) => {
         <div className="flex justify-center flex-wrap">
           {things.map((item, index) => {
             const even = index % 2;
+            const path = item.label.split("-").join(" ");
             return (
               <div
                 key={index}
@@ -20,7 +20,7 @@ const Category = ({ things }) => {
                     : "max-md:mt-12"
                 } md:basis-1/6 basis-1/3`}
               >
-                <Link to={item.path}>
+                <Link to={path}>
                   <div className="p-3">
                     <div className="rounded-full overflow-hidden">
                       <img

@@ -1,7 +1,12 @@
 import { useMemo, useState } from "react";
 import { Card } from "../Portal";
 
-const Overview = ({ things, type = "product", sortOptions, filters }) => {
+const Overview = ({
+  things,
+  type = "product",
+  sortOptions,
+  filters = true,
+}) => {
   const [sort, setSort] = useState(0);
   const [category, setCategory] = useState("همه");
   const handleCategoryChange = () => {
@@ -27,25 +32,27 @@ const Overview = ({ things, type = "product", sortOptions, filters }) => {
   return (
     <section className="pagecenter padding-y max-xl:px-5">
       <div className="flex-seperate max-sm:flex-col mb-5">
-        <div className="flex items-center gap-2">
-          <label htmlFor="category" className="label">
-            دسته‌بندی:
-          </label>
-          <select
-            id="category"
-            className="field min-w-52 max-sm:min-w-72"
-            onChange={handleCategoryChange}
-          >
-            <option value="همه">همه</option>
-            {filters.map((item, index) => {
-              return (
-                <option key={index} value={item}>
-                  {item}
-                </option>
-              );
-            })}
-          </select>
-        </div>
+        {filters && (
+          <div className="flex items-center gap-2">
+            <label htmlFor="category" className="label">
+              دسته‌بندی:
+            </label>
+            <select
+              id="category"
+              className="field min-w-52 max-sm:min-w-72"
+              onChange={handleCategoryChange}
+            >
+              <option value="همه">همه</option>
+              {filters.map((item, index) => {
+                return (
+                  <option key={index} value={item}>
+                    {item}
+                  </option>
+                );
+              })}
+            </select>
+          </div>
+        )}
         <div className="flex items-center max-sm:min-w-full">
           {sortOptions.map((item, index) => {
             return (
