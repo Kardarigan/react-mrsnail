@@ -14,16 +14,20 @@ const Card = ({ thing, type = "product" }) => {
               type == "product" ? "h-72" : "h-52"
             }`}
           />
+          <h5 className="para-sm mark mark-dark absolute bottom-0 left-0">
+            {thing.category}
+          </h5>
         </div>
         {type === "product" ? (
-          <div className="text-slate-50 px-3 py-2 title-sm text-right flex-seperate">
-            <h5 className="line-clamp-2">{thing.title}</h5>
-            <div className="text-end">
-              <h6 className="whitespace-nowrap flex justify-end items-center">
-                <span className="para-lil me-1">تومان</span>
+          <div className="text-slate-50 px-3 py-2 title-sm text-right">
+            <h2 className="line-clamp-2">{thing.title}</h2>
+            <hr className="my-2 opacity-30" />
+            <div className="flex-seperate para">
+              <h6 className="font-thin">{thing.brand}</h6>
+              <h5 className="whitespace-nowrap flex justify-end items-center para">
+                <span className="para-lil me-1 font-extralight">تومان</span>
                 {thing.price}
-              </h6>
-              <span className="para-sm mark mark-light">{thing.category}</span>
+              </h5>
             </div>
           </div>
         ) : (

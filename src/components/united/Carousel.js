@@ -14,12 +14,12 @@ const Carousel = ({
       id={id}
       className={`paddin ${
         dark ? "bg-slate-800" : "bg-slate-100"
-      } items-center p-5`}
+      } items-center px-5 padding-y`}
     >
-      <div className="flex-fullcenter title w-full text-center px-8 pt-1 pb-5 max-lg:py-5">
-        <h2 className={`mark ${dark ? "mark-light" : "mark-dark"} px-5 py-1`}>
+      <div className="flex-fullcenter title-sm w-full text-center px-8 pt-1 pb-5 max-lg:py-5">
+        <h5 className={`mark ${dark ? "mark-light" : "mark-dark"} px-8 py-5`}>
           {title}
-        </h2>
+        </h5>
       </div>
       <div dir="ltr">
         <Splide

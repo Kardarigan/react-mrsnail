@@ -1,18 +1,22 @@
 import { useParams } from "react-router-dom";
-import { products } from "../../data/products";
+import { categories, sorts } from "../../data/constans";
 import { Hero, Overview } from "../Portal";
-import { categories } from "../../data/constans";
+import { products } from "../../data/products";
 
 const Ex_Category = () => {
   const { category } = useParams();
-  const theCategory = categories.filter((e) => e.label === category);
-  const sortedThings = products.filter((e) => e.category === category);
-  console.log(sortedThings);
+  const theCategory = categories.find((cat) => cat.label === category);
+  const theProducts = products.find((prod) => prod.category === category);
+  console.log(category);
 
   return (
     <>
       <Hero thing={theCategory.hero} />
-      {/* <Overview things={sortedThings} filters={false} /> */}
+      <Overview
+        things={theProducts}
+        sortOptions={sorts.products}
+        filters={false}
+      />
     </>
   );
 };

@@ -1,4 +1,4 @@
-import { Hero, Articles, Carousel, Category, Slider } from "../Portal";
+import { Hero, Articles, Carousel, Category, Slider, Infobox } from "../Portal";
 import { articles, categories, hero, homeSlide } from "../../data/constans";
 import { products } from "../../data/products";
 import { Link } from "react-router-dom";
@@ -23,7 +23,7 @@ const Home = () => {
         </Link>
       </section>
       <Carousel title="تازه ترین کالاها" things={products} />
-      <Slider things={homeSlide} />
+      <Infobox />
       <Carousel title="محبوب ترین کالاها" things={products} />
       <Articles thing={articles.home} />
     </>

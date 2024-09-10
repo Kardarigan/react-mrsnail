@@ -102,7 +102,7 @@ const Navbar = () => {
                   menuOpen ? "visible opacity-100" : "invisible opacity-0"
                 }`}
               >
-                <ul className="text-xs">
+                <ul className="text-xs text-end">
                   {navmenu.map((item, index) => {
                     return (
                       <li

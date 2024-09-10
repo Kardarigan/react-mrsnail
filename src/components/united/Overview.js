@@ -2,7 +2,7 @@ import { useMemo, useState } from "react";
 import { Card } from "../Portal";
 
 const Overview = ({
-  things,
+  things = [],
   type = "product",
   sortOptions,
   filters = true,
@@ -13,7 +13,13 @@ const Overview = ({
     let selectedCategory = document.getElementById("category").value;
     setCategory(selectedCategory);
   };
+
   const currentThings = useMemo(() => {
+    if (!things || !things.length) {
+      alert("nothing");
+      return [];
+    }
+
     let sortedThings = [...things];
 
     if (sort === 0) {
@@ -27,7 +33,7 @@ const Overview = ({
     }
 
     return sortedThings;
-  }, [sort, category]);
+  }, [sort, category, things]);
 
   return (
     <section className="pagecenter padding-y max-xl:px-5">
