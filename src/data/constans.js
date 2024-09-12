@@ -22,6 +22,10 @@ import Logo_1 from "../asset/images/64e6177329c2d71389b1b219_walmart.png";
 
 export const navbar = [
   {
+    label: "خانه",
+    path: "/",
+  },
+  {
     label: "مرکز حلزون",
     path: "/snail",
   },
@@ -32,10 +36,6 @@ export const navbar = [
   {
     label: "محصولات",
     path: "/product",
-  },
-  {
-    label: "تماس با ما",
-    path: "/contact",
   },
 ];
 
@@ -56,7 +56,6 @@ export const navmenu = [
     label: "خاک و بستر",
     path: "/",
   },
-
   {
     label: "ملزومات و تجهیزات",
     path: "/",
@@ -169,6 +168,7 @@ export const categories = [
     bgColor: "#0F172A",
     label: "باکس‌ها",
     englishLabel: "Box of Reptiles",
+    icon: "fa fa-user",
     hero: {
       cover: hero_home,
       title: "باکس‌ها",
@@ -182,6 +182,7 @@ export const categories = [
     bgColor: "#0F172A",
     label: "خزنده‌ها و موش‌ها",
     englishLabel: "Reptiles & Mice",
+    icon: "fa fa-user",
     hero: {
       cover: hero_home,
       title: "خزنده‌ها و موش‌ها",
@@ -195,6 +196,7 @@ export const categories = [
     bgColor: "#0F172A",
     label: "مکمل و کلسیم",
     englishLabel: "Supplements & Calcium",
+    icon: "fa fa-user",
     hero: {
       cover: hero_home,
       title: "مکمل و کلسیم",
@@ -208,6 +210,7 @@ export const categories = [
     bgColor: "#0F172A",
     label: "خاک و بستر",
     englishLabel: "Soil & Substrate",
+    icon: "fa fa-user",
     hero: {
       cover: hero_home,
       title: "خاک و بستر",
@@ -221,6 +224,7 @@ export const categories = [
     bgColor: "#0F172A",
     label: "ملزومات و تجهیزات",
     englishLabel: "Essentials",
+    icon: "fa fa-user",
     hero: {
       cover: hero_home,
       title: "ملزومات و تجهیزات",
@@ -234,6 +238,7 @@ export const categories = [
     bgColor: "#0F172A",
     label: "خوراک‌ها",
     englishLabel: "Foods",
+    icon: "fa fa-user",
     hero: {
       cover: hero_home,
       title: "خوراک‌ها",

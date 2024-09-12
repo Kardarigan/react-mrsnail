@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
+import GLightbox from "glightbox";
 
 const Gallery = ({ product }) => {
   const mainSliderRef = useRef(null);
@@ -9,6 +10,22 @@ const Gallery = ({ product }) => {
     if (mainSliderRef.current && thumbnailSliderRef.current) {
       mainSliderRef.current.sync(thumbnailSliderRef.current.splide);
     }
+  }, []);
+
+  useEffect(() => {
+    const lightbox = GLightbox({
+      loop: true,
+      openEffect: "fade",
+      closeEffect: "fade",
+      width: 1920,
+      height: 1080,
+    });
+    lightbox.on("slide_changed", ({ prev, current }) => {
+      if (mainSliderRef.current) {
+        mainSliderRef.current.go(current.index);
+      }
+    });
+    return () => lightbox.destroy();
   }, []);
 
   return (
@@ -23,22 +40,22 @@ const Gallery = ({ product }) => {
           height: 500,
         }}
       >
-        {product.covers.map((item, index) => {
-          return (
-            <SplideSlide key={index}>
+        {product.covers.map((item, index) => (
+          <SplideSlide key={index}>
+            <a href={item} data-glightbox="type:image">
               <img
                 src={item}
                 alt={`banner ${index}`}
                 className="size-full center-obj"
               />
-            </SplideSlide>
-          );
-        })}
+            </a>
+          </SplideSlide>
+        ))}
       </Splide>
 
       <Splide
         ref={thumbnailSliderRef}
-        id="thumgnailSlider"
+        id="thumbnailSlider"
         className="mt-4"
         options={{
           type: "loop",
@@ -53,13 +70,11 @@ const Gallery = ({ product }) => {
           cover: true,
         }}
       >
-        {product.covers.map((item, index) => {
-          return (
-            <SplideSlide key={index}>
-              <img src={item} alt={`banner ${index}`} className="size-full" />
-            </SplideSlide>
-          );
-        })}
+        {product.covers.map((item, index) => (
+          <SplideSlide key={index}>
+            <img src={item} alt={`banner ${index}`} className="size-full" />
+          </SplideSlide>
+        ))}
       </Splide>
     </div>
   );

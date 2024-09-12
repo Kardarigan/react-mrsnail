@@ -68,7 +68,7 @@ const Footer = () => {
       </div>
       <div className="text-center mt-12">
         <hr />
-        <p className="mt-2">
+        <p className="mt-2 text-xs">
           تمام حقوق این وبسات متعلق به آقای حلزون میباشد &copy; 2024
         </p>
       </div>

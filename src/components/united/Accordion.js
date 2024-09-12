@@ -17,7 +17,10 @@ const Accordion = ({ label, describe }) => {
           }`}
         ></i>
       </div>
-      <div className="mt-5 para-sm text-slate-300">{describe}</div>
+      <div className="mt-6 para-sm text-slate-300">
+        <hr className="mb-5 opacity-30" />
+        {describe}
+      </div>
     </div>
   );
 };

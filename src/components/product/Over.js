@@ -1,17 +1,26 @@
 import { Link } from "react-router-dom";
 import { orderLink } from "../../data/constans";
-import { Tip } from "../Portal";
 
 const Over = ({ product }) => {
   return (
-    <div className="max-lg:p-5 max-lg:mt-12 flex flex-col gap-y-12">
-      <h1 className="title-lg">{product.title}</h1>
-      <div>
-        <h2>دسته بندی : {product.category}</h2>
-        {product.brand && <h2>برند محصول : {product.brand}</h2>}
+    <div className="max-lg:p-5 max-lg:mt-12 flex flex-col gap-y-12 relative">
+      <div className="text-end absolute left-0">
+        <h6 className="inline mark bg-red-600">ناموجود</h6>
       </div>
-      <div className="">
-        <h2 className="title mark mark-dark inline">
+      <h1 className="title-lg">{product.title}</h1>
+      <div className="grid gap-y-2">
+        {product.specs.map((item, index) => {
+          if (index < 4) {
+            return (
+              <h2>
+                {item.label}: {item.describe}
+              </h2>
+            );
+          }
+        })}
+      </div>
+      <div>
+        <h2 className="title-sm mark mark-dark inline">
           قیمت : {product.price} هزار تومن
         </h2>
         <p className="label mt-12">

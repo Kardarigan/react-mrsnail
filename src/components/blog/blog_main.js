@@ -5,24 +5,27 @@ const blog_main = ({ blog }) => {
   return (
     <>
       <main className="pagecenter p-5 pb-40">
-        <img
-          src={blog.cover}
-          alt={blog.title}
-          className="center-obj w-full max-h-96"
-        />
-        <p className="para-sm text-slate-500 mt-2">{blog.coverLabel}</p>
-        <div className="flex justify-between lg:gap-x-4">
+        <div className="flex justify-between lg:gap-x-12">
           <section className="max-w-[800px]">
-            <div className="grid gap-y-10 mt-10">
+            <div className="grid gap-y-10">
               {blog.article.map((item, index) => {
                 return (
                   <article className="mt-5" key={index}>
                     {item.cover && (
-                      <img
-                        src={item.cover}
-                        alt={item.title}
-                        className="center-obj w-full max-h-96"
-                      />
+                      <>
+                        <img
+                          src={item.cover}
+                          alt={item.title}
+                          className="center-obj w-full max-h-96"
+                        />
+                        {item.coverLabel ? (
+                          <p className="para-sm text-slate-500 mt-2">
+                            {blog.coverLabel}
+                          </p>
+                        ) : (
+                          ""
+                        )}
+                      </>
                     )}
                     <h2 className="title-sm my-5 mark mark-dark">
                       {item.title}

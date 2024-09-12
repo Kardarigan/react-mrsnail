@@ -9,6 +9,7 @@ const Category = ({ things }) => {
           {things.map((item, index) => {
             const even = index % 2;
             const path = item.label.split("-").join(" ");
+
             return (
               <div
                 key={index}

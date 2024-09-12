@@ -37,9 +37,9 @@ const Overview = ({
 
   return (
     <section className="pagecenter padding-y max-xl:px-5">
-      <div className="flex-seperate max-sm:flex-col mb-5">
+      <div className="flex-seperate gap-2 max-md:flex-col mb-5 max-md:px-5">
         {filters && (
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 max-md:w-full">
             <label htmlFor="category" className="label">
               دسته‌بندی:
             </label>
@@ -59,17 +59,17 @@ const Overview = ({
             </select>
           </div>
         )}
-        <div className="flex items-center max-sm:min-w-full">
+        <div className="flex-fullcenter max-md:min-w-full">
           {sortOptions.map((item, index) => {
             return (
               <button
                 key={index}
                 onClick={() => setSort(index)}
-                className={`transition-all px-10 py-3 ${
+                className={`transition-all w-1/3 px-10 py-3 ${
                   index === sort
                     ? "bg-slate-300 text-slate-900"
                     : "bg-slate-800 text-slate-100"
-                }`}
+                } ${index === 0 ? "" : "border-r border-slate-100"}`}
               >
                 {item}
               </button>
