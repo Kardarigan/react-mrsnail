@@ -41,7 +41,7 @@ const blog_main = ({ blog }) => {
                     {item.links && (
                       <ul className="grid gap-y-2 mt-5 font-bold">
                         {item.links.map((item, index) => {
-                          const path = "/blog/" + item.split(" ").join("-");
+                          const path = "/مقالات/" + item.split(" ").join("-");
                           return (
                             <li key={index}>
                               <Link
@@ -64,7 +64,7 @@ const blog_main = ({ blog }) => {
                 <h3>خواندن این مقالات را شدیدا پیشنهاد میکنیم :</h3>
                 <ul className="grid gap-y-2 mt-5 font-bold para-sm">
                   {blog.nextOnes.map((item, index) => {
-                    const path = "/blog/" + item.split(" ").join("-");
+                    const path = "/مقالات/" + item.split(" ").join("-");
                     return (
                       <li key={index}>
                         <Link

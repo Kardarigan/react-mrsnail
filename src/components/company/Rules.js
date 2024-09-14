@@ -10,7 +10,7 @@ const Rules = () => {
               <h2>{item.title}</h2>
               <ul className="grid gap-y-3 mt-8">
                 {item.items.map((rule, index) => {
-                  const path = "/policy/" + rule.split(" ").join("-");
+                  const path = "/قوانین/" + rule.split(" ").join("-");
 
                   return (
                     <>

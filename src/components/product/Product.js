@@ -32,10 +32,10 @@ const Product = () => {
         </div>
       </section>
       <Details product={theProduct} />
-      <Carousel things={familiar} title="کالا های مشابه" />
+      <Carousel things={familiar} title="محصولاتی مشابه" />
       <Carousel
         things={sameBrand}
-        title={`کالا های دیگر ${theProduct.brand}`}
+        title={`محصولاتی دیگر ${theProduct.brand}`}
         dark
       />
       <Articles thing={articles.product} />

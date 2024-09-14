@@ -9,7 +9,7 @@ const Snail = () => {
       <Category things={categories} />
       <Slider things={specials} />
       <Carousel things={products} title="پرطرفدار ترین ها" />
-      <Carousel things={products} title="کالا های حلزونی" dark />
+      <Carousel things={products} title="محصولاتی حلزونی" dark />
       <Articles thing={articles.snail} />
     </>
   );

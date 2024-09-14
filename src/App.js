@@ -20,15 +20,15 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/policy" element={<Policy />} />
-          <Route path="/policy/:rule" element={<Rule />} />
-          <Route path="/product" element={<All_Products />} />
-          <Route path="/product/:product" element={<Product />} />
-          <Route path="/blog" element={<All_Blogs />} />
-          <Route path="/blog/:blog" element={<Blog />} />
-          <Route path="/snail" element={<Snail />} />
+          <Route path="/درباره" element={<About />} />
+          <Route path="/تماس با ما" element={<Contact />} />
+          <Route path="/قوانین" element={<Policy />} />
+          <Route path="/قوانین/:rule" element={<Rule />} />
+          <Route path="/محصولات" element={<All_Products />} />
+          <Route path="/محصولات/:product" element={<Product />} />
+          <Route path="/مقالات" element={<All_Blogs />} />
+          <Route path="/مقالات/:blog" element={<Blog />} />
+          <Route path="/مرکز حلزون" element={<Snail />} />
           <Route path="/:category" element={<Ex_Category />} />
         </Route>
       </Routes>

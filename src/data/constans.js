@@ -27,15 +27,15 @@ export const navbar = [
   },
   {
     label: "مرکز حلزون",
-    path: "/snail",
+    path: "/مرکز حلزون",
   },
   {
     label: "بلاگ",
-    path: "/blog",
+    path: "/مقالات",
   },
   {
     label: "محصولات",
-    path: "/product",
+    path: "/محصولات",
   },
 ];
 
@@ -90,15 +90,15 @@ export const footer = {
       links: [
         {
           label: "درباره ما",
-          path: "/about",
+          path: "/درباره",
         },
         {
           label: "تماس با ما",
-          path: "/contact",
+          path: "/تماس با ما",
         },
         {
           label: "قوانین",
-          path: "/policy",
+          path: "/قوانین",
         },
       ],
     },
@@ -131,7 +131,7 @@ export const footer = {
           path: "/",
         },
         {
-          label: "کالا ها",
+          label: "محصولات",
           path: "/",
         },
         {
@@ -393,7 +393,7 @@ export const hero = {
   snail: {
     cover: hero_snail,
     title: "بخش حلزون ها اینجاست!",
-    path: "/snail",
+    path: "/مرکز حلزون",
   },
   snailHero: {
     cover: hero_hq,
@@ -418,7 +418,7 @@ export const hero = {
   },
   products: {
     cover: hero_product,
-    title: "تمام کالا ها رو میتونی اینجا پیدا کنی",
+    title: "تمام محصولات رو میتونی اینجا پیدا کنی",
     path: "#firstSection",
   },
   blogs: {
@@ -472,7 +472,8 @@ export const about = {
 
 export const contact = {
   hint: "میتونی بجای تماس گرفتن، از <a href='#form' class='underline'>این فرم</a> استفاده کنی",
-  formHint: "خوشت نیومد؟ برگرد به صفحه ی <a href='/contact'>ارتباط با ما</a>",
+  formHint:
+    "خوشت نیومد؟ برگرد به صفحه ی <a href='/تماس با ما'>ارتباط با ما</a>",
   boxes: [
     {
       title: "اطلاعات تماس",

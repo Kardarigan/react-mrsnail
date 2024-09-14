@@ -50,7 +50,7 @@ const Layout = () => {
         }`}
         onClick={() => window.scrollTo(0, 0)}
       >
-        <i className="fa-solid fa-chevron-up mt-1" />
+        <i className="fa-solid fa-chevron-up mt-2" />
       </button>
     </>
   );
