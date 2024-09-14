@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { categories, sorts } from "../../data/constans";
-import { Hero, Overview } from "../Portal";
+import { Breadcrumb, Hero, Overview } from "../Portal";
 import { products } from "../../data/products";
 
 const Ex_Category = () => {
@@ -12,6 +12,7 @@ const Ex_Category = () => {
   return (
     <>
       <Hero thing={theCategory.hero} />
+      <Breadcrumb />
       <Overview
         things={theProducts}
         sortOptions={sorts.products}

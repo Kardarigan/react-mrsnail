@@ -34,7 +34,7 @@ const Carousel = ({
             omitEnd: true,
             perPage: 6,
             breakpoints: {
-              1440: {
+              1580: {
                 perPage: 4,
               },
               1024: {

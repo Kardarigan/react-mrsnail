@@ -1,6 +1,13 @@
 import { useParams } from "react-router-dom";
 import { blogs } from "../../data/blogs";
-import { Articles, Blog_Control, Blog_Main, Carousel, Hero } from "../Portal";
+import {
+  Articles,
+  Blog_Control,
+  Blog_Main,
+  Breadcrumb,
+  Carousel,
+  Hero,
+} from "../Portal";
 import { articles } from "../../data/constans";
 
 const Blog = () => {
@@ -18,6 +25,7 @@ const Blog = () => {
   return (
     <>
       <Hero thing={heroData} />
+      <Breadcrumb />
       <Blog_Control blog={theBlog} />
       <Blog_Main blog={theBlog} />
       <Carousel things={familiar} title="مقالات مشابه" type="blog" dark />

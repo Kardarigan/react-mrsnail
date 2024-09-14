@@ -1,6 +1,5 @@
-import { useState, useEffect } from "react";
-import { articles, contact, hero } from "../../data/constans";
-import { Articles, Boxes, Hero } from "../Portal";
+import { articles, contact } from "../../data/constans";
+import { Articles, Boxes, Breadcrumb } from "../Portal";
 import Form from "../united/Form";
 
 const Contact = () => {
@@ -15,8 +14,9 @@ const Contact = () => {
           className="min-h-[50vh] w-full"
         ></iframe>
       </section>
+      <Breadcrumb />
       <Boxes />
-      <section className="pagecenter">
+      <section className="pagecenter" id="form">
         <div className="flex-fullcenter title-sm w-full text-center px-8 pt-1 pb-5 max-lg:py-5">
           <h5 className="mark mark-dark px-8 py-5">فرم تماس</h5>
         </div>

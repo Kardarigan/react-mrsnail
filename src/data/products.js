@@ -14,7 +14,7 @@ export const categories = [
 
 export const products = [
   {
-    title: "مکمل خزنده حلزونیکال",
+    title: "مکمل پروتیینی حلزون و خزنده ی حلزونیکال",
     covers: [albino_1, albino_2, albino_3, albino_4],
     category: "مکمل و کلسیم",
     brand: "حلزونیکال",
@@ -34,11 +34,11 @@ export const products = [
     suggested: 20,
   },
   {
-    title: "مکمل خزنده حلزونیکال",
+    title: "مکمل پروتیینی حلزون و خزنده ی حلزونیکال",
     covers: [albino_1, albino_2, albino_3, albino_4],
     category: "مکمل و کلسیم",
     brand: "حلزونیکال",
-    stock: false,
+    stock: true,
     describe:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.",
     specs: [

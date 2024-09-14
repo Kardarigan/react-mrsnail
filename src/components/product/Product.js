@@ -1,6 +1,13 @@
 import { useParams } from "react-router-dom";
 import { products } from "../../data/products";
-import { Articles, Carousel, Details, Gallery, Over } from "../Portal";
+import {
+  Articles,
+  Breadcrumb,
+  Carousel,
+  Details,
+  Gallery,
+  Over,
+} from "../Portal";
 import { articles } from "../../data/constans";
 
 const Product = () => {
@@ -15,6 +22,7 @@ const Product = () => {
 
   return (
     <>
+      <Breadcrumb />
       <section className="lg:flex gap-12 padding">
         <div className="lg:w-2/5">
           <Gallery product={theProduct} />

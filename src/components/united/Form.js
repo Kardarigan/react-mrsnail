@@ -1,6 +1,6 @@
 const Form = ({ fields, submit = "ارسال" }) => {
   return (
-    <form action="" dir="rtl">
+    <form className="padding-x">
       <div className="grid grid-cols-2 gap-3">
         {fields.map((item, index) => {
           const id = item.label.replace(/\s+/g, "-").toLowerCase();

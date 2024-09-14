@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { rules } from "../../data/policy";
-import { Articles } from "../Portal";
+import { Articles, Breadcrumb } from "../Portal";
 
 const Rule = () => {
   const { rule } = useParams();
@@ -9,6 +9,7 @@ const Rule = () => {
 
   return (
     <>
+      <Breadcrumb />
       <section className="pagecenter padding-t">
         <h1 className="title">{theRule.title}</h1>
         <p className="para-sm text-slate-500 text-end my-2">

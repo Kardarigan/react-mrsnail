@@ -35,8 +35,10 @@ import Hamburger from "./united/Hamburger";
 import Snail from "./Home/Snail";
 import Ex_Category from "./product/Ex_Category";
 import Infobox from "./Home/Infobox";
+import Breadcrumb from "./united/Breadcrumb";
 
 export {
+  Breadcrumb,
   Infobox,
   Ex_Category,
   Snail,

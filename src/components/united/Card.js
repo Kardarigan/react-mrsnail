@@ -4,23 +4,29 @@ const Card = ({ thing, type = "product" }) => {
   const path = "/" + type + "/" + thing.title.split(" ").join("-");
 
   return (
-    <Link to={path} dir="rtl">
-      <div className="bg-slate-900 p-2 group">
-        <div className="overflow-hidden relative group">
+    <div className="flex-fullcenter" dir="rtl">
+      <div
+        className={`bg-slate-900 p-2 group w-[280px] ${
+          type === "product" ? "h-[380px]" : "h-[300px]"
+        }`}
+      >
+        <div
+          className={`overflow-hidden relative group ${
+            type == "product" ? "h-[70%]" : "h-3/5"
+          }`}
+        >
           <img
             src={type === "blog" ? thing.cover : thing.covers[0]}
             alt={thing.title}
-            className={`group-hover:scale-125 transition-all center-obj w-full ${
-              type == "product" ? "h-72" : "h-52"
-            }`}
+            className="group-hover:scale-125 transition-all center-obj w-full"
           />
           <h5 className="para-sm mark mark-dark absolute bottom-0 left-0">
             {thing.category}
           </h5>
         </div>
         {type === "product" ? (
-          <div className="text-slate-50 px-3 py-2 title-sm text-right">
-            <h2 className="line-clamp-2">{thing.title}</h2>
+          <div className="text-slate-50 px-3 py-2 text-right">
+            <h2 className="line-clamp-2 md:text-lg text-xl">{thing.title}</h2>
             <hr className="my-2 opacity-30" />
             <div className="flex-seperate para">
               <h6 className="font-thin">{thing.brand}</h6>
@@ -45,7 +51,7 @@ const Card = ({ thing, type = "product" }) => {
           </div>
         )}
       </div>
-    </Link>
+    </div>
   );
 };
 
