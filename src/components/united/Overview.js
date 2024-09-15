@@ -65,7 +65,7 @@ const Overview = ({
               <button
                 key={index}
                 onClick={() => setSort(index)}
-                className={`transition-all w-1/3 px-10 py-3 ${
+                className={`transition-all min-w-1/3 px-10 py-3 ${
                   index === sort
                     ? "bg-slate-300 text-slate-900"
                     : "bg-slate-800 text-slate-100"

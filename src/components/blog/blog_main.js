@@ -5,7 +5,7 @@ const blog_main = ({ blog }) => {
   return (
     <>
       <main className="pagecenter p-5 pb-40">
-        <div className="flex justify-between lg:gap-x-12">
+        <div className="flex max-lg:flex-col justify-between gap-12">
           <section className="max-w-[800px]">
             <div className="grid gap-y-10">
               {blog.article.map((item, index) => {

@@ -5,9 +5,9 @@ const Hero = ({ thing }) => {
         <img
           src={thing.cover}
           alt="Hero Image"
-          className="center-obj w-full max-h-[80vh] bg-slate-900"
+          className="center-obj w-full max-h-[82vh] bg-slate-900"
         />
-        <div className="absolute right-0 top-20 m-12 max-w-[550px] text-slate-50">
+        <div className="absolute right-0 top-20 m-12 md:w-[50%] text-slate-50">
           <h1 className="title-sup">{thing.title}</h1>
           <p
             className="mt-5 max-md:text-xs"

@@ -45,7 +45,7 @@ const Layout = () => {
       </main>
       <Footer />
       <button
-        className={`fixed bottom-10 left-10 button-light rounded title-sm size-12 displayTrans ${
+        className={`fixed bottom-10 right-10 button-light rounded title-sm size-12 displayTrans ${
           showBackToTop ? "visible opacity-100" : "invisible opacity-0"
         }`}
         onClick={() => window.scrollTo(0, 0)}

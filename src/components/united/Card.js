@@ -23,26 +23,28 @@ const Card = ({ thing, type = "product" }) => {
               className="group-hover:scale-125 transition-all center-obj w-full"
             />
           </Link>
-          <h5 className="para-sm mark mark-dark absolute bottom-0 left-0">
+          <h5 className="para-sm mark mark-dark absolute bottom-0 left-[-40px]  pe-12">
             <Link to={"/" + thing.category}>{thing.category}</Link>
           </h5>
         </div>
         {type === "product" ? (
-          <div className="text-slate-50 px-3 py-2 text-right">
+          <div className="text-slate-50 px-3 py-2 text-right flex flex-col justify-between h-[30%]">
             <Link to={path}>
               <h2 className="line-clamp-2 md:text-lg text-xl">{thing.title}</h2>
             </Link>
-            <hr className="my-2 opacity-30" />
-            <div className="flex-seperate para">
-              <h6 className="font-thin">{thing.brand}</h6>
-              <h5 className="whitespace-nowrap flex justify-end items-center para">
-                <span className="para-lil me-1 font-extralight">تومان</span>
-                {thing.price}
-              </h5>
+            <div>
+              <hr className="my-2 opacity-30" />
+              <div className="flex-seperate para">
+                <h6 className="font-thin">{thing.brand}</h6>
+                <h5 className="whitespace-nowrap flex justify-end items-center para">
+                  <span className="para-lil me-1 font-extralight">تومان</span>
+                  {thing.price}
+                </h5>
+              </div>
             </div>
           </div>
         ) : (
-          <div className="text-slate-50 px-3 pt-2 para-lil text-right">
+          <div className="text-slate-50 px-3 pt-2 para-lil text-right h-2/3">
             <Link to={path}>
               <h2 className="title-sm truncate ">{thing.title}</h2>
             </Link>
