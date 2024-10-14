@@ -5,6 +5,7 @@ import category_khak from "../asset/images/category/cateogry_khak.png";
 import cateogry_khorak from "../asset/images/category/cateogry_khorak.png";
 import cateogry_box from "../asset/images/category/cateogry_box.png";
 import cateogry_essentials from "../asset/images/category/cateogry_essentials.png";
+import cateogry_warming from "../asset/images/category/category_warming_pad.png";
 // --------------------[hero
 import hero_home from "../asset/images/hero/hero_home.jpg";
 import hero_blog from "../asset/images/hero/hero_blog.png";
@@ -237,6 +238,20 @@ export const categories = [
     alt: "توضیحات تصویر کاور",
     bgColor: "#0F172A",
     label: "خوراک‌ها",
+    englishLabel: "Foods",
+    icon: "fa fa-user",
+    hero: {
+      cover: hero_home,
+      title: "خوراک‌ها",
+      subtitle: "جایگاه زیر نویس الکی برای این بخش مربوط به دسته بندی",
+      path: "#firstSection",
+    },
+  },
+  {
+    cover: cateogry_warming,
+    alt: "توضیحات  کاور",
+    bgColor: "#0F172A",
+    label: "پدحرارتی",
     englishLabel: "Foods",
     icon: "fa fa-user",
     hero: {

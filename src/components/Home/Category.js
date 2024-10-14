@@ -19,7 +19,7 @@ const Category = ({ things }) => {
                     : even
                     ? "md:mt-12"
                     : "max-md:mt-12"
-                } md:basis-1/6 basis-1/3`}
+                } md:basis-[14%] basis-1/3`}
               >
                 <Link to={path}>
                   <div className="p-3">

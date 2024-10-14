@@ -10,6 +10,7 @@ export const categories = [
   "خاک و بستر",
   "ملزومات و تجهیزات",
   "خوراک‌ها",
+  "پدحرارتی",
 ];
 
 export const products = [

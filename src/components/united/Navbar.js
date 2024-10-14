@@ -1,5 +1,5 @@
 import { Link, NavLink, useLocation } from "react-router-dom";
-import Logo from "../../asset/images/cropped_image.png";
+import Logo from "../../asset/images/mr-logo.png";
 import { navbar, navmenu } from "../../data/constans";
 import { useEffect, useRef, useState } from "react";
 import { Hamburger } from "../Portal";
@@ -70,7 +70,7 @@ const Navbar = () => {
               className="bg-transparent border-0 text-slate-50 focus-within:ring-0 ps-2 md:pe-14 pe-5 py-1 md:w-[30vw] w-[82.1vw]"
             />
             <button className="ps-3 pe-3 py-1 cursor-pointer bg-slate-100 absolute right-0">
-              <a class="fas fa-magnifying-glass" />
+              <a className="fas fa-magnifying-glass" />
             </button>
           </div>
           <div className="flex">
@@ -81,7 +81,6 @@ const Navbar = () => {
                     to={item.path}
                     key={index}
                     className="hover:text-slate-600"
-                    activeClassName="underlined"
                   >
                     {item.label}
                   </NavLink>
@@ -95,7 +94,7 @@ const Navbar = () => {
             >
               <span className="hover:text-slate-400">
                 دسته بندی ها
-                <i class="fas fa-solid fa-bars ms-2" />
+                <i className="fas fa-solid fa-bars ms-2" />
               </span>
               <menu
                 className={`absolute top-10 right-0 z-20 w-full displayTrans ${

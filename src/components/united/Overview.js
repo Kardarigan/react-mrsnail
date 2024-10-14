@@ -16,7 +16,6 @@ const Overview = ({
 
   const currentThings = useMemo(() => {
     if (!things || !things.length) {
-      alert("nothing");
       return [];
     }
 

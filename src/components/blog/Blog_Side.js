@@ -32,7 +32,7 @@ const Blog_Side = ({ blog }) => {
           <div className="flex-seperate gap-x-3 bg-slate-500 mt-5 w-full">
             <button onClick={handleCopyClick} className="bg-slate-700 size-12">
               {copied ? (
-                <i class="fa-sharp fa-solid fa-check text-2xl" />
+                <i className="fa-sharp fa-solid fa-check text-2xl" />
               ) : (
                 <span>کپی</span>
               )}
