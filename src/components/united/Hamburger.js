@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { navbar, navmenu, social } from "../../data/constans";
+import { categories, navbar, social } from "../../data/constans";
 
 const Hamburger = () => {
   return (
@@ -21,10 +21,12 @@ const Hamburger = () => {
         </ul>
         <h3 className="mt-5 mb-2">دسته بندی ها</h3>
         <ul className="grid gap-y-3">
-          {navmenu.map((item, index) => {
+          {categories.map((item, index) => {
+            const path = item.label.split("-").join(" ");
+
             return (
               <li key={index}>
-                <NavLink to={item.path} className="button button-dark">
+                <NavLink to={path} className="button button-dark">
                   {item.label}
                 </NavLink>
               </li>

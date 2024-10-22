@@ -6,7 +6,7 @@ const blog_main = ({ blog }) => {
     <>
       <main className="pagecenter p-5 pb-40">
         <div className="flex max-lg:flex-col justify-between gap-12">
-          <section className="max-w-[800px]">
+          <section className="">
             <div className="grid gap-y-10">
               {blog.article.map((item, index) => {
                 return (
@@ -84,12 +84,12 @@ const blog_main = ({ blog }) => {
                 <hr className="mt-8 mb-12" />
                 <div className="grid gap-y-3">
                   <h2 className="title-sm mb-3">ممکنه از خودت بپرسی: </h2>
-                  {blog.faq.map((item, index) => {
+                  {blog.faq.mainEntity.map((item, index) => {
                     return (
                       <Accordion
                         key={index}
-                        label={item.queiz}
-                        describe={item.answer}
+                        label={item.name}
+                        describe={item.acceptedAnswer.text}
                       />
                     );
                   })}

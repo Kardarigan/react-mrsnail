@@ -40,33 +40,6 @@ export const navbar = [
   },
 ];
 
-export const navmenu = [
-  {
-    label: "باکس ها",
-    path: "/",
-  },
-  {
-    label: "خزنده ها و موش ها",
-    path: "/",
-  },
-  {
-    label: "مکمل تقویتی و دارو",
-    path: "/",
-  },
-  {
-    label: "خاک و بستر",
-    path: "/",
-  },
-  {
-    label: "ملزومات و تجهیزات",
-    path: "/",
-  },
-  {
-    label: "خوراک ها",
-    path: "/",
-  },
-];
-
 export const footer = {
   logos: [
     {
@@ -252,7 +225,7 @@ export const categories = [
     alt: "توضیحات  کاور",
     bgColor: "#0F172A",
     label: "پدحرارتی",
-    englishLabel: "Foods",
+    englishLabel: "Warming Pad",
     icon: "fa fa-user",
     hero: {
       cover: hero_home,

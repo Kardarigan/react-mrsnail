@@ -1,6 +1,6 @@
 import { Link, NavLink, useLocation } from "react-router-dom";
 import Logo from "../../asset/images/mr-logo.png";
-import { navbar, navmenu } from "../../data/constans";
+import { categories, navbar } from "../../data/constans";
 import { useEffect, useRef, useState } from "react";
 import { Hamburger } from "../Portal";
 
@@ -102,15 +102,20 @@ const Navbar = () => {
                 }`}
               >
                 <ul className="text-xs text-end">
-                  {navmenu.map((item, index) => {
+                  {categories.map((item, index) => {
+                    const path = item.label.split("-").join(" ");
+
                     return (
                       <li
                         key={index}
-                        className={`bg-slate-900 mt-1 p-2 transition-all ${
+                        className={`mt-1 transition-all ${
                           menuOpen ? "" : `translate-y-[-100%]`
                         }`}
                       >
-                        <Link to={item.path} className="hover:text-slate-400">
+                        <Link
+                          to={path}
+                          className="hover:text-slate-400 bg-slate-900 p-2 block size-full"
+                        >
                           {item.label}
                         </Link>
                       </li>
