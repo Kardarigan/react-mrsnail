@@ -27,10 +27,10 @@ const Blog_Side = ({ blog }) => {
   return (
     <section className="text-center lg:max-w-[400px] w-full mt-10">
       <div className="sticky top-10">
-        <div className="box px-5">
+        <div className="mark-dark p-5">
           <h1 className="title-sm">{blog.title}</h1>
           <div className="flex-seperate gap-x-3 bg-slate-500 mt-5 w-full">
-            <button onClick={handleCopyClick} className="bg-slate-700 size-12">
+            <button onClick={handleCopyClick} className="bg-slate-700 w-12 h-9">
               {copied ? (
                 <i className="fa-sharp fa-solid fa-check text-2xl" />
               ) : (
@@ -38,7 +38,7 @@ const Blog_Side = ({ blog }) => {
               )}
             </button>
             <p
-              className="text-slate-200 whitespace-nowrap overflow-hidden px-5 py-2 select-all"
+              className="text-slate-200 whitespace-nowrap overflow-hidden px-3 py-1 select-all"
               dir="ltr"
               ref={linkElement}
             >

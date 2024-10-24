@@ -36,8 +36,10 @@ import Snail from "./Home/Snail";
 import Ex_Category from "./product/Ex_Category";
 import Infobox from "./Home/Infobox";
 import Breadcrumb from "./united/Breadcrumb";
+import Title from "./united/Title";
 
 export {
+  Title,
   Breadcrumb,
   Infobox,
   Ex_Category,

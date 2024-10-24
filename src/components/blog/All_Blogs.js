@@ -1,12 +1,12 @@
 import { blogs, categories } from "../../data/blogs";
 import { hero, sorts } from "../../data/constans";
-import { Breadcrumb, Carousel, Hero, Overview } from "../Portal";
+import { Breadcrumb, Carousel, Hero, Overview, Title } from "../Portal";
 
 const Blogs = () => {
   return (
     <>
-      <Hero thing={hero.blogs} />
       <Breadcrumb />
+      <Title title="اخبار و مقالات" />
       <Carousel
         title="آخرین مطالب"
         things={blogs}

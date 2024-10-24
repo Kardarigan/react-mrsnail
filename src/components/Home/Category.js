@@ -8,7 +8,7 @@ const Category = ({ things }) => {
         <div className="flex justify-center flex-wrap">
           {things.map((item, index) => {
             const even = index % 2;
-            const path = item.label.split("-").join(" ");
+            const path = "/" + item.label.split("-").join(" ");
 
             return (
               <div

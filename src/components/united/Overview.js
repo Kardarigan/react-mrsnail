@@ -58,7 +58,7 @@ const Overview = ({
             </select>
           </div>
         )}
-        <div className="flex-fullcenter max-md:min-w-full">
+        <div className="flex-fullcenter max-md:min-w-full max-md:mt-5">
           {sortOptions.map((item, index) => {
             return (
               <button

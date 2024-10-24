@@ -4,11 +4,11 @@ import { footer, social } from "../../data/constans";
 const Footer = () => {
   return (
     <footer
-      className="padding-x padding-t pb-5 min-h-[70vh] bg-slate-900 text-slate-100 flex flex-col justify-between"
+      className="padding-x padding-t pb-5 min-h-[53vh] bg-slate-900 text-slate-100 flex flex-col justify-between"
       dir="rtl"
     >
-      <div>
-        <div className="grid md:grid-cols-4 max-md:gap-8 max-w-[800px] max-md:text-center">
+      <div className="md:flex-seperate">
+        <div className="grid md:grid-cols-6 max-md:gap-8 max-md:text-center">
           {footer.links.map((item, index) => {
             return (
               <div key={index}>
@@ -27,13 +27,13 @@ const Footer = () => {
               </div>
             );
           })}
-          <div className="md:flex ">
-            <div className="p-8 md:max-w-96">
+          <div className="md:flex max-md:gap-x-32 col-span-3">
+            <div className="p-8 md:pt-0 md:max-w-96">
               <h3 className="para-lil">
                 برای به روز بودن از آخرین رویداد ها و تخفیفات آغای حلزون رو در
                 صفحات اجتماعی دنبال کنید :
               </h3>
-              <ul className="flex justify-center gap-4 mt-3">
+              <ul className="flex max-md:justify-center gap-4 mt-3">
                 {social.map((item, index) => {
                   return (
                     <li key={index}>
@@ -48,7 +48,7 @@ const Footer = () => {
                 })}
               </ul>
             </div>
-            <ul className="flex justify-center gap-5 mt-5">
+            <ul className="flex justify-center gap-5 max-md:mt-5">
               {footer.logos.map((item, index) => {
                 return (
                   <li key={index}>

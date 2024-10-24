@@ -1,10 +1,18 @@
 import { articles, hero } from "../../data/constans";
 import { categories, products, specials } from "../../data/snails";
-import { Articles, Carousel, Category, Hero, Slider } from "../Portal";
+import {
+  Articles,
+  Breadcrumb,
+  Carousel,
+  Category,
+  Hero,
+  Slider,
+} from "../Portal";
 
 const Snail = () => {
   return (
     <>
+      <Breadcrumb />
       <Hero thing={hero.snailHero} />
       <Category things={categories} />
       <Slider things={specials} />
