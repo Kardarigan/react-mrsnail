@@ -1,6 +1,7 @@
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { Card } from "../Portal";
 import "@splidejs/react-splide/css";
+import { Loaded_Animation } from "../united/Loaded_Animation";
 
 const Carousel = ({
   title,
@@ -9,6 +10,8 @@ const Carousel = ({
   dark = false,
   id = null,
 }) => {
+  const { ref, className } = Loaded_Animation();
+
   return (
     <section
       id={id}
@@ -17,7 +20,12 @@ const Carousel = ({
       } items-center px-5 padding-y`}
     >
       <div className="flex-fullcenter title-sm w-full text-center px-8 pt-1 pb-5 max-lg:py-5">
-        <h5 className={`mark ${dark ? "mark-light" : "mark-dark"} px-8 py-5`}>
+        <h5
+          ref={ref}
+          className={`mark ${
+            dark ? "mark-light" : "mark-dark"
+          } px-8 py-5 ${className}`}
+        >
           {title}
         </h5>
       </div>

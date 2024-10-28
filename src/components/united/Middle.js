@@ -1,8 +1,13 @@
 import { Link } from "react-router-dom";
 
+import { Loaded_Animation } from "../united/Loaded_Animation";
+
 const Middle = ({ thing, id = null, dark = false, reverse = false }) => {
+  const { ref, className } = Loaded_Animation();
+
   return (
     <section
+      ref={ref}
       className={`padding-x py-8  ${dark ? "bg-slate-900 text-slate-100" : ""}`}
       id={id}
     >
@@ -14,7 +19,7 @@ const Middle = ({ thing, id = null, dark = false, reverse = false }) => {
           <h2
             className={`title text-center mt-1 mb-3 mark ${
               dark ? "mark-light" : "mark-dark"
-            }`}
+            } ${className}`}
           >
             {thing.title}
           </h2>

@@ -76,10 +76,16 @@ const Overview = ({
           })}
         </div>
       </div>
-      <div className="grid gap-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2">
-        {currentThings.map((card) => {
-          return <Card thing={card} type={type} />;
-        })}
+      <div className="relative grid gap-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 min-h-36">
+        {currentThings.length > 0 ? (
+          currentThings.map((card) => {
+            return <Card thing={card} type={type} />;
+          })
+        ) : (
+          <h2 className="title text-center w-full absolute top-16">
+            گویا اینجا خالیه...
+          </h2>
+        )}
       </div>
     </section>
   );

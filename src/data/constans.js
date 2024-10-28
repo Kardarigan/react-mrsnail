@@ -31,12 +31,12 @@ export const navbar = [
     path: "/مرکز حلزون",
   },
   {
-    label: "بلاگ",
-    path: "/مقالات",
-  },
-  {
     label: "محصولات",
     path: "/محصولات",
+  },
+  {
+    label: "مقالات",
+    path: "/مقالات",
   },
 ];
 
@@ -101,16 +101,16 @@ export const footer = {
       title: "دسترسی سریع",
       links: [
         {
-          label: "مقالات",
+          label: "خانه",
           path: "/",
         },
         {
           label: "محصولات",
-          path: "/",
+          path: "/محصولات",
         },
         {
-          label: "دسته بندی ها",
-          path: "/",
+          label: "مقالات",
+          path: "/مقالات",
         },
       ],
     },
@@ -212,20 +212,6 @@ export const categories = [
     bgColor: "#0F172A",
     label: "خوراک‌ها",
     englishLabel: "Foods",
-    icon: "fa fa-user",
-    hero: {
-      cover: hero_home,
-      title: "خوراک‌ها",
-      subtitle: "جایگاه زیر نویس الکی برای این بخش مربوط به دسته بندی",
-      path: "#firstSection",
-    },
-  },
-  {
-    cover: cateogry_warming,
-    alt: "توضیحات  کاور",
-    bgColor: "#0F172A",
-    label: "پدحرارتی",
-    englishLabel: "Warming Pad",
     icon: "fa fa-user",
     hero: {
       cover: hero_home,
@@ -394,11 +380,6 @@ export const hero = {
     title: "آقای حلزون",
     subtitle: "همونی که حلزونت میخواد!",
   },
-  Policy: {
-    cover: Hero_1,
-    title: "قوانین و مقررات",
-    path: "#firstSection",
-  },
   form: {
     cover: Hero_1,
     title: "فرم ارتباط سریع",
@@ -407,11 +388,6 @@ export const hero = {
   products: {
     cover: hero_product,
     title: "تمام محصولات رو میتونی اینجا پیدا کنی",
-    path: "#firstSection",
-  },
-  blogs: {
-    cover: hero_blog,
-    title: "هر چیزی که باید درمورد یه حلزون ها بدونی",
     path: "#firstSection",
   },
 };

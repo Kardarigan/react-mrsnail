@@ -10,7 +10,7 @@ const Rule = () => {
   return (
     <>
       <Breadcrumb />
-      <section className="pagecenter padding-t">
+      <section className="pagecenter padding-t px-8">
         <h1 className="title">{theRule.title}</h1>
         <p className="para-sm text-slate-500 text-end mt-2">
           اعتبار قانون تا {theRule.expiration}

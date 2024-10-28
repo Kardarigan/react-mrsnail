@@ -1,11 +1,14 @@
 import { Link } from "react-router-dom";
+import { Loaded_Animation } from "../united/Loaded_Animation";
 
 const Category = ({ things }) => {
   const length = things.length;
+  const { ref, className } = Loaded_Animation();
+
   return (
     <section id="firstSection">
       <div className="pagecenter px-5 py-10">
-        <div className="flex justify-center flex-wrap">
+        <div ref={ref} className="flex justify-center flex-wrap">
           {things.map((item, index) => {
             const even = index % 2;
             const path = "/" + item.label.split("-").join(" ");
@@ -19,7 +22,9 @@ const Category = ({ things }) => {
                     : even
                     ? "md:mt-12"
                     : "max-md:mt-12"
-                } ${length === 7 ? "" : ""} md:basis-[14%] basis-1/3`}
+                } ${
+                  length === 7 ? "" : ""
+                } md:basis-[14%] basis-1/3 ${className}`}
               >
                 <Link to={path}>
                   <div className="p-3">

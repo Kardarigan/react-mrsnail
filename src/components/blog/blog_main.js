@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import { Accordion, Blog_Side } from "../Portal";
+import { Loaded_Animation } from "../united/Loaded_Animation";
 
 const blog_main = ({ blog }) => {
+  const { ref, className } = Loaded_Animation();
   return (
     <>
       <main className="pagecenter p-5 pb-40">
@@ -14,9 +16,10 @@ const blog_main = ({ blog }) => {
                     {item.cover && (
                       <>
                         <img
+                          ref={ref}
                           src={item.cover}
                           alt={item.title}
-                          className="center-obj w-full max-h-96"
+                          className={`center-obj w-full max-h-96 ${className}`}
                         />
                         {item.coverLabel ? (
                           <p className="para-sm text-slate-500 mt-2">

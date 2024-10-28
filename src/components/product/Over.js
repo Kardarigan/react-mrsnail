@@ -4,9 +4,11 @@ import { orderLink } from "../../data/constans";
 const Over = ({ product }) => {
   return (
     <div className="max-lg:p-5 max-lg:mt-12 flex flex-col gap-y-12 relative">
-      <div className="text-end absolute left-0">
-        <h6 className="inline mark bg-red-600">ناموجود</h6>
-      </div>
+      {!product.stock && (
+        <div className="text-end absolute left-0 top-[-30px]">
+          <h6 className="inline mark bg-red-600 text-slate-50">ناموجود</h6>
+        </div>
+      )}
       <h1 className="title-lg">{product.title}</h1>
       <div className="grid gap-y-2">
         {product.specs.map((item, index) => {

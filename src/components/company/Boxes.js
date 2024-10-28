@@ -1,9 +1,11 @@
 import { contact } from "../../data/constans";
 import { Tip } from "../Portal";
+import { Loaded_Animation } from "../united/Loaded_Animation";
 
 const Boxes = () => {
+  const { ref, className } = Loaded_Animation();
   return (
-    <section className="pagecenter padding">
+    <section className="pagecenter padding" ref={ref}>
       <Tip message={contact.hint} />
       <div className="flex mt-5 gap-5 max-lg:flex-col">
         {contact.boxes.map((box, index) => {
@@ -14,7 +16,10 @@ const Boxes = () => {
                 {box.items.map((item, index) => {
                   return (
                     <>
-                      <li className="flex-seperate para" key={index}>
+                      <li
+                        className={`flex-seperate para ${className}`}
+                        key={index}
+                      >
                         <div className="flex items-center">
                           <div className="w-8 flex-fullcenter">
                             <i className={item.icon} />

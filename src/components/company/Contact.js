@@ -5,6 +5,7 @@ import Form from "../united/Form";
 const Contact = () => {
   return (
     <>
+      <Breadcrumb />
       <section className="bg-slate-900">
         <iframe
           title="headquarter office"
@@ -14,7 +15,6 @@ const Contact = () => {
           className="min-h-[50vh] w-full"
         ></iframe>
       </section>
-      <Breadcrumb />
       <Boxes />
       <section className="pagecenter" id="form">
         <div className="flex-fullcenter title-sm w-full text-center px-8 pt-1 pb-5 max-lg:py-5">

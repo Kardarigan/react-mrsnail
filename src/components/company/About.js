@@ -5,8 +5,8 @@ import { articles, half, hero, middle } from "../../data/constans";
 const About = () => {
   return (
     <>
-      <Hero thing={hero.About} />
       <Breadcrumb />
+      <Hero thing={hero.About} />
       <Middle thing={middle.about[0]} id="firstSection" />
       <Half thing={half.about[0]} />
       <Middle thing={middle.about[0]} dark reverse />

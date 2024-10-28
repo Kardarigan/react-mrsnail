@@ -1,11 +1,18 @@
+import { Loaded_Animation } from "../united/Loaded_Animation";
+
 const Form = ({ fields, submit = "ارسال" }) => {
+  const { ref, className } = Loaded_Animation();
   return (
     <form className="padding-x">
       <div className="grid grid-cols-2 gap-3">
         {fields.map((item, index) => {
           const id = item.label.replace(/\s+/g, "-").toLowerCase();
           return (
-            <div key={index} className={item.half ? "" : "col-span-2"}>
+            <div
+              ref={ref}
+              key={index}
+              className={`${item.half ? "" : "col-span-2"} ${className}`}
+            >
               <label htmlFor={id} className="label">
                 {item.label}
               </label>
