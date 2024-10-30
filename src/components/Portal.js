@@ -37,8 +37,10 @@ import Ex_Category from "./product/Ex_Category";
 import Infobox from "./Home/Infobox";
 import Breadcrumb from "./united/Breadcrumb";
 import Title from "./united/Title";
+import Share_Button from "./united/Share_Button";
 
 export {
+  Share_Button,
   Title,
   Breadcrumb,
   Infobox,

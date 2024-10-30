@@ -3,14 +3,14 @@ import { Accordion, Blog_Side } from "../Portal";
 import { Loaded_Animation } from "../united/Loaded_Animation";
 
 const blog_main = ({ blog }) => {
-  const { ref, className } = Loaded_Animation();
   return (
     <>
       <main className="pagecenter p-5 pb-40">
         <div className="flex max-lg:flex-col justify-between gap-12">
           <section className="">
-            <div className="grid gap-y-10">
+            <div className="grid gap-y-16">
               {blog.article.map((item, index) => {
+                const { ref, className } = Loaded_Animation();
                 return (
                   <article className="mt-5" key={index}>
                     {item.cover && (

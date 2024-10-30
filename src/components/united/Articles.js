@@ -1,5 +1,3 @@
-import { lastArticles } from "../../data/constans";
-
 const Articles = ({ thing, id = null }) => {
   return (
     <section className="padding" id={id}>

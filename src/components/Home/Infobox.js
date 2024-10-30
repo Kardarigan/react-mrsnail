@@ -1,4 +1,4 @@
-import React from "react";
+import { Loaded_Animation } from "../united/Loaded_Animation";
 
 const Infobox = ({ title, things }) => {
   return (
@@ -8,8 +8,9 @@ const Infobox = ({ title, things }) => {
       </div>
       <div className="mt-12 grid lg:grid-cols-4 grid-cols-2 gap-5">
         {things.map((item, index) => {
+          const { ref, className } = Loaded_Animation();
           return (
-            <div className="box text-center p-0">
+            <div className={`box text-center p-0 ${className}`} ref={ref}>
               <div className="w-full h-20 flex-fullcenter bg-slate-700 title">
                 <i className={item.icon} />
               </div>

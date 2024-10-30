@@ -562,30 +562,23 @@ export const orderLink = [
   },
 ];
 
-export const blogControl = {
-  shareButtons: [
-    {
-      title: "اشتراک با واتساپ",
-      icon: "fa-brands fa-whatsapp",
-      href: "",
-    },
-    {
-      title: "اشتراک با اینستاگرام",
-      icon: "fa-brands fa-instagram",
-      href: "",
-    },
-    {
-      title: "اشتراک با تلگرام",
-      icon: "fa-brands fa-telegram",
-      href: "",
-    },
-    {
-      title: "اشتراک گذاری",
-      icon: "fa-regular fa-share-nodes",
-      href: "",
-    },
-  ],
-};
+export const shareButtons = [
+  {
+    title: "اشتراک با واتساپ",
+    icon: "fa-brands fa-whatsapp",
+    href: "whatsapp://send?text=",
+  },
+  {
+    title: "اشتراک با اینستاگرام",
+    icon: "fa-brands fa-instagram",
+    href: "https://www.instagram.com/?url=",
+  },
+  {
+    title: "اشتراک با تلگرام",
+    icon: "fa-brands fa-telegram",
+    href: "https://t.me/share/url?url=",
+  },
+];
 
 export const infoValue = [
   {
