@@ -2,7 +2,7 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import Logo from "../../asset/images/mr-logo.png";
 import { categories, navbar } from "../../data/constans";
 import { useEffect, useRef, useState } from "react";
-import { Hamburger } from "../Portal";
+import { Hamburger, Search } from "../Portal";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -64,15 +64,13 @@ const Navbar = () => {
       </header>
       <nav className="bg-slate-100 px-5">
         <div className="pagecenter flex-seperate py-2">
-          <div className="bg-slate-900 border-2 border-slate-900 overflow-hidden relative max-md:w-full">
-            <input
-              type="text"
-              className="bg-transparent border-0 text-slate-50 focus-within:ring-0 ps-2 md:pe-14 pe-5 py-1 md:w-[30vw] w-[82.1vw]"
-            />
-            <button className="ps-3 pe-3 py-1 cursor-pointer bg-slate-100 absolute right-0">
-              <a className="fas fa-magnifying-glass" />
-            </button>
-          </div>
+          <Link
+            to="/جستجو"
+            className="bg-slate-900 border-2 text-slate-400 hover:text-slate-100 text-center border-slate-900 px-12 py-2 overflow-hidden relative max-md:w-full"
+          >
+            <i className="fas fa-magnifying-glass me-2" />
+            برای جستجوی کالا کلیک کنید
+          </Link>
           <div className="flex">
             <div className="flex flex-row-reverse items-center gap-4 me-10 font-bold text-slate-900 max-md:hidden">
               {navbar.map((item, index) => {

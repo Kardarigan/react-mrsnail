@@ -12,6 +12,7 @@ import {
   Rule,
   Snail,
   Ex_Category,
+  Search_Results,
 } from "./components/Portal";
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
           <Route path="/مقالات/:blog" element={<Blog />} />
           <Route path="/مرکز حلزون" element={<Snail />} />
           <Route path="/:category" element={<Ex_Category />} />
+          <Route path="/جستجو" element={<Search_Results />} />
         </Route>
       </Routes>
     </Router>

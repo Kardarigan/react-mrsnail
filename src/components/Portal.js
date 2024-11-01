@@ -38,8 +38,12 @@ import Infobox from "./Home/Infobox";
 import Breadcrumb from "./united/Breadcrumb";
 import Title from "./united/Title";
 import Share_Button from "./united/Share_Button";
+import Search from "./united/Search";
+import Search_Results from "./united/Search_Results";
 
 export {
+  Search_Results,
+  Search,
   Share_Button,
   Title,
   Breadcrumb,
