@@ -23,7 +23,7 @@ const Card = ({ thing, type = "product" }) => {
               className="group-hover:scale-125 transition-all center-obj w-full"
             />
           </Link>
-          <h5 className="para-sm mark mark-dark absolute bottom-0 left-[-40px]  pe-12">
+          <h5 className="para-sm mark mark-dark absolute top-0 left-0 pb-3 pe-2">
             <Link to={"/" + thing.category}>{thing.category}</Link>
           </h5>
         </div>

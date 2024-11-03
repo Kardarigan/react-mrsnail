@@ -19,7 +19,6 @@ import special_2 from "../asset/images/special/special_2.png";
 import special_3 from "../asset/images/special/special_3.webp";
 
 import Hero_1 from "../asset/images/20240428_045027.jpg";
-import Logo_1 from "../asset/images/64e6177329c2d71389b1b219_walmart.png";
 
 export const navbar = [
   {
@@ -44,17 +43,17 @@ export const footer = {
   logos: [
     {
       label: "developer's logo",
-      logo: Logo_1,
+      logo: "https://upload.wikimedia.org/wikipedia/commons/e/e2/ESRB_2013_Adults_Only_18%2B.svg",
       path: "/",
     },
     {
       label: "developer's logo",
-      logo: Logo_1,
+      logo: "https://upload.wikimedia.org/wikipedia/commons/e/e2/ESRB_2013_Adults_Only_18%2B.svg",
       path: "/",
     },
     {
       label: "developer's logo",
-      logo: Logo_1,
+      logo: "https://upload.wikimedia.org/wikipedia/commons/e/e2/ESRB_2013_Adults_Only_18%2B.svg",
       path: "/",
     },
   ],
@@ -119,19 +118,19 @@ export const footer = {
 
 export const social = [
   {
-    path: "/",
+    path: "https://www.instagram.com/m_r_snail/",
     iconClass: "fa-instagram",
-    colorClass: "hover:bg-pink-600",
+    colorClass: "hover:instagram",
   },
   {
-    path: "/",
-    iconClass: "fa-whatsapp",
-    colorClass: "hover:bg-green-500",
-  },
-  {
-    path: "/",
+    path: "https://t.me/+CX8v2UMK135lYmM8?fbclid=PAZXh0bgNhZW0CMTEAAabTyuX7OPpFadkSTBN6fSRH_j-G23qyouZaTUUzs9tXepfk0NumV4gG6WY_aem_1M7sh3QBE6NUYUqkSNhnzQ",
     iconClass: "fa-telegram",
     colorClass: "hover:bg-sky-500",
+  },
+  {
+    path: "https://wa.me/989335720649",
+    iconClass: "fa-whatsapp",
+    colorClass: "hover:bg-green-500",
   },
 ];
 
@@ -443,19 +442,14 @@ export const contact = {
       title: "اطلاعات تماس",
       items: [
         {
-          icon: "fa-duotone fa-solid fa-phone",
-          label: "ثابت",
-          describe: "+1 518 879 654",
-        },
-        {
           icon: "fa-duotone fa-solid fa-mobile",
           label: "همراه (حلزون)",
           describe: "+98 933-572-0649",
         },
         {
           icon: "fa-duotone fa-solid fa-mobile",
-          label: "همراه (خزنده)",
-          describe: "+98 933-572-0649",
+          label: "همراه (صرفا خزندگان و جوندگان)",
+          describe: "+98 935-529-2294",
         },
         {
           icon: "fa-duotone fa-solid fa-envelope",
@@ -508,6 +502,26 @@ export const contact = {
           describe: "9 - 18",
         },
       ],
+    },
+  ],
+  socialMedia: [
+    {
+      icon: "fa-brands fa-instagram",
+      label: "اینستاگرام آقای حلزون",
+      href: "https://www.instagram.com/m_r_snail/",
+      class: "instagram",
+    },
+    {
+      icon: "fa-brands fa-instagram",
+      label: "اینستاگرام پت لایف ایران",
+      href: "https://www.instagram.com/petslife.iran/",
+      class: "instagram",
+    },
+    {
+      icon: "fa-brands fa-telegram",
+      label: "کانال تلگرام",
+      href: "https://t.me/+CX8v2UMK135lYmM8?fbclid=PAZXh0bgNhZW0CMTEAAabTyuX7OPpFadkSTBN6fSRH_j-G23qyouZaTUUzs9tXepfk0NumV4gG6WY_aem_1M7sh3QBE6NUYUqkSNhnzQ",
+      class: "bg-sky-500",
     },
   ],
   contactForm: [

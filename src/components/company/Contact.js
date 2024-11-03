@@ -15,6 +15,26 @@ const Contact = () => {
           className="min-h-[50vh] w-full"
         ></iframe>
       </section>
+      <section className="pagecenter padding-t text-center">
+        <div className="box lg:w-4/5 mx-auto">
+          <h5 className="mark mark-light md:mx-44 title-sm">صفحات اجتماعی</h5>
+          <ul className="flex-fullcenter max-md:flex-col gap-3 mt-12">
+            {contact.socialMedia.map((item, index) => {
+              return (
+                <li key={index} className="md:w-1/3 w-full">
+                  <a
+                    href={item.href}
+                    className="button button-light py-5 w-full max-md:flex-fullcenter"
+                  >
+                    <i className={item.icon + " title me-1 md:block"} />
+                    {item.label}
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </section>
       <Boxes />
       <section className="pagecenter" id="form">
         <div className="flex-fullcenter title-sm w-full text-center px-8 pt-1 pb-5 max-lg:py-5">

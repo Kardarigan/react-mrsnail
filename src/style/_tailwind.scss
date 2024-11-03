@@ -112,6 +112,9 @@
   }
 }
 @layer utilities {
+  .instagram {
+    @apply bg-gradient-to-br from-[#833ab4] via-[#fd1d1d] to-[#fcb045];
+  }
   .padding {
     @apply md:px-16 px-8 md:py-24 py-12;
   }
