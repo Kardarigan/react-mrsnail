@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
-import { products } from "../../data/products";
+import { products as snailProducts } from "../../data/snails";
+import { products as mainProducts } from "../../data/products";
 import {
   Articles,
   Breadcrumb,
@@ -13,12 +14,15 @@ import { articles } from "../../data/constans";
 const Product = () => {
   const { product } = useParams();
   const path = product.split("-").join(" ");
-  const theProduct = products.find((e) => e && e.title === path);
+  const combinedProducts = [...snailProducts, ...mainProducts];
+  const theProduct = combinedProducts.find((e) => e && e.title === path);
 
-  const familiar = products.filter(
+  const familiar = combinedProducts.filter(
     (item) => item.category === theProduct.category
   );
-  const sameBrand = products.filter((item) => item.brand === theProduct.brand);
+  const sameBrand = combinedProducts.filter(
+    (item) => item.brand === theProduct.brand
+  );
 
   return (
     <>
@@ -33,11 +37,13 @@ const Product = () => {
       </section>
       <Details product={theProduct} />
       <Carousel things={familiar} title="محصولاتی مشابه" />
-      <Carousel
-        things={sameBrand}
-        title={`محصولاتی دیگر ${theProduct.brand}`}
-        dark
-      />
+      {theProduct.brand && (
+        <Carousel
+          things={sameBrand}
+          title={`محصولاتی دیگر ${theProduct.brand}`}
+          dark
+        />
+      )}
       <Articles thing={articles.product} />
     </>
   );
