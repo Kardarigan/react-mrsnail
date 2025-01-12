@@ -29,14 +29,23 @@ const Over = ({ product }) => {
         <h2 className="title-sm mark mark-dark inline">
           قیمت : {product.price} هزار تومن
         </h2>
-        <h6 className="label mt-12">
-          برای تعداد پایین تلگرام پیام دهید, در غیر اینصورت لطفا زنگ بزنید!
-        </h6>
+        <div className="mt-12 mb-5 flex items-center">
+          <i class="fa-sharp fa-solid fa-circle-exclamation" />
+          <div className="label text-xs ms-2">
+            <h6>
+              برای تعداد پایین تلگرام پیام دهید, در غیر اینصورت لطفا زنگ بزنید!
+            </h6>
+            <h6>
+              برای ساکنین <b>تهران</b> و <b>حومه</b> امکان ارسال تنگ و آکواریوم
+              وجود دارد.
+            </h6>
+          </div>
+        </div>
         <div className="flex max-md:flex-col gap-2 mt-2">
           {orderLink.map((button, index) => {
             return (
-              <Link
-                to={button.path}
+              <a
+                href={button.path}
                 key={index}
                 className={`button ${index > 0 ? "button-dark" : "button-sky"}`}
               >
@@ -44,7 +53,7 @@ const Over = ({ product }) => {
                   <i className={button.icon}></i>
                   {button.label}
                 </div>
-              </Link>
+              </a>
             );
           })}
         </div>

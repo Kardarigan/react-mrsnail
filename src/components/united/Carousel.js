@@ -15,9 +15,9 @@ const Carousel = ({
   return (
     <section
       id={id}
-      className={`paddin ${
+      className={`padding ${
         dark ? "bg-slate-800" : "bg-slate-100"
-      } items-center px-5 padding-y`}
+      } items-center`}
     >
       <div className="flex-fullcenter title-sm w-full text-center px-8 pt-1 pb-5 max-lg:py-5">
         <h5
@@ -38,9 +38,9 @@ const Carousel = ({
             arrows: false,
             autoplay: true,
             pagination: false,
-            gap: "2em",
+            gap: "1.5em",
             omitEnd: true,
-            perPage: 6,
+            perPage: 4,
             breakpoints: {
               1580: {
                 perPage: 4,
