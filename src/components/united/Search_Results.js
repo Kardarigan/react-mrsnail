@@ -31,7 +31,7 @@ const Search_Results = () => {
             onChange={onSearch}
           />
           <button
-            className="ps-3 pe-3 py-1 cursor-pointer bg-slate-100 absolute right-0"
+            className="ps-3 pe-3 py-1 cursor-pointer bg-slate-800 absolute right-0"
             onClick={onSearch}
           >
             <a className="fas fa-magnifying-glass" />
