@@ -1,14 +1,20 @@
 import { useParams } from "react-router-dom";
 import { categories as constCategories, sorts } from "../../data/constans";
 import { Breadcrumb, Hero, Overview } from "../Portal";
-import { products } from "../../data/products";
-import { categories as snailCategories } from "../../data/snails";
+import { products as mainProducts } from "../../data/products";
+import {
+  categories as snailCategories,
+  products as snailProducts,
+} from "../../data/snails";
 
 const Ex_Category = () => {
   const { category } = useParams();
+  const combinedProducts = [...mainProducts, ...snailProducts];
   const combinedCategories = [...constCategories, ...snailCategories];
   const theCategory = combinedCategories.find((cat) => cat.label === category);
-  const theProducts = products.filter((prod) => prod.category === category);
+  const theProducts = combinedProducts.filter(
+    (prod) => prod.category === category
+  );
 
   return (
     <>

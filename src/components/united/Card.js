@@ -4,37 +4,6 @@ import { Link } from "react-router-dom";
 const Card = ({ thing, type = "product" }) => {
   const persianType = type === "product" ? "محصولات" : "مقالات";
   const path = "/" + persianType + "/" + thing.title.split(" ").join("-");
-  const titleRef = useRef(null);
-  const [isMultipleLines, setIsMultipleLines] = useState(false);
-
-  useEffect(() => {
-    const adjustFontSize = () => {
-      const titleElement = titleRef.current;
-      if (titleElement) {
-        const initialFontSize = window.getComputedStyle(titleElement).fontSize;
-        const lineHeight = window.getComputedStyle(titleElement).lineHeight;
-        const originalFontSize = parseFloat(initialFontSize);
-        let fontSize = originalFontSize;
-
-        const isTextOverflowing = () => {
-          return titleElement.scrollHeight > parseFloat(lineHeight);
-        };
-
-        while (isTextOverflowing() && fontSize > 10) {
-          fontSize--;
-          titleElement.style.fontSize = fontSize + "px";
-        }
-        if (!isTextOverflowing()) {
-          setIsMultipleLines(true);
-        }
-      }
-    };
-
-    adjustFontSize();
-    window.addEventListener("resize", adjustFontSize);
-
-    return () => window.removeEventListener("resize", adjustFontSize);
-  }, []);
 
   const formattedPrice =
     type === "product" && thing.price
@@ -67,16 +36,7 @@ const Card = ({ thing, type = "product" }) => {
         {type === "product" ? (
           <div className="text-slate-50 px-3 py-2 text-right flex flex-col justify-between h-[30%]">
             <Link to={path}>
-              <h2
-                className={`${
-                  isMultipleLines
-                    ? "line-clamp-2 md:text-lg text-xl"
-                    : "md:text-xl"
-                } `}
-                ref={titleRef}
-              >
-                {thing.title}
-              </h2>
+              <h2 className="line-clamp-2 md:text-lg text-xl">{thing.title}</h2>
             </Link>
             <div>
               <hr className="my-2 opacity-30" />

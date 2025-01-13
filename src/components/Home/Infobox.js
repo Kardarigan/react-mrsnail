@@ -15,8 +15,8 @@ const Infobox = ({ title, things }) => {
                 <i className={item.icon} />
               </div>
               <div className="px-8 py-5">
-                <h3>{item.title}</h3>
-                <p className="para-sm mt-2 text-slate-300">{item.describe}</p>
+                <h3 className="text-lg">{item.title}</h3>
+                <p className="para-lil mt-2 text-slate-300">{item.describe}</p>
               </div>
             </div>
           );
