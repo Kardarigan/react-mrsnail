@@ -15,7 +15,7 @@ const Details = ({ product }) => {
 
   if (product.prices) {
     titles.push({
-      title: "لیست قیمت ها",
+      title: "لیست قیمت ها (تومان)",
       value: product.prices,
     });
   }

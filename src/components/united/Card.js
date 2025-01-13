@@ -83,7 +83,7 @@ const Card = ({ thing, type = "product" }) => {
               <div className="flex-seperate para">
                 <a
                   href="https://t.me/m_r_snail"
-                  className="button button-light px-3"
+                  className="button button-light px-3 py-1 w-auto"
                   onClick={() =>
                     alert(
                       "شما به تلگرام آقای حلزون جهت درخواست سفارش هدایت خواهید شد."
@@ -93,7 +93,7 @@ const Card = ({ thing, type = "product" }) => {
                   <i className="fa-sharp-duotone fa-sharp fa-bag-shopping me-1" />
                   ثبت سفارش
                 </a>
-                <h5 className="whitespace-nowrap flex flex-col relative text-end para">
+                <h5 className="whitespace-nowrap flex flex-col items-center relative text-end para">
                   <b className="title-sm">{formattedPrice}</b>
                   <span className="text-[10px] absolute top-5 font-extralight">
                     هزار تومان

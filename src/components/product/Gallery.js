@@ -26,7 +26,7 @@ const Gallery = ({ product }) => {
             type: "loop",
             rewind: true,
             pagination: false,
-            height: 500,
+            height: 600,
           }}
         >
           {product.covers.map((item, index) => (

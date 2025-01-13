@@ -28,15 +28,18 @@ import jade_7 from "../asset/products/snails/jade/cover-7.jpg";
 import jade_8 from "../asset/products/snails/jade/cover-8.jpg";
 import jade_9 from "../asset/products/snails/jade/cover-9.jpg";
 
-// --------->
+// ---------> jade and fulica dark russian
+import jade_fulica_dark_russian_1 from "../asset/products/snails/unique/fulica-dark-russian/cover-1.jpg";
+import jade_fulica_dark_russian_2 from "../asset/products/snails/unique/fulica-dark-russian/cover-2.jpg";
+import jade_fulica_dark_russian_3 from "../asset/products/snails/unique/fulica-dark-russian/cover-3.jpg";
 
 export const categories = [
   {
-    cover: category_unique,
+    cover: category_achatina,
     alt: "توضیحات تصویر کاور",
     bgColor: "#0F172A",
-    label: "کلکسیونی، کمیاب، سفارشی",
-    englishLabel: "Unique Snails",
+    label: "حلزون ها",
+    englishLabel: "Snials",
     icon: "fa fa-user",
     hero: {
       cover: albino_3,
@@ -46,11 +49,11 @@ export const categories = [
     },
   },
   {
-    cover: category_achatina,
+    cover: category_unique,
     alt: "توضیحات تصویر کاور",
     bgColor: "#0F172A",
-    label: "حلزون آچاتینا",
-    englishLabel: "Achatina Snial",
+    label: "کلکسیونی و کمیاب",
+    englishLabel: "Unique Snails",
     icon: "fa fa-user",
     hero: {
       cover: albino_3,
@@ -159,15 +162,22 @@ export const products = [
     title: "حلزون آلبینو",
     covers: [albino_1, albino_2, albino_3, albino_4, albino_5],
     category: "حلزون",
-    describe: "",
-    specs: [{ label: "مورد مصرف", describe: "خزنده ها و موش ها" }],
+    stock: true,
+    describe:
+      "حلزون آلبینو، با پوسته‌ای شفاف و بدن سفید تا صورتی، یکی از جذاب‌ترین حیوانات خانگی است. این نوع حلزون به دلیل رنگ‌بندی منحصر به فرد، در میان دوست‌داران حیوانات خانگی بسیار محبوب است. نگهداری از حلزون آلبینو نیاز به محیطی مرطوب و غذای مناسب دارد که شامل سبزیجات تازه و کلسیم است. این حلزون‌ها به آرامش و کم‌نوری علاقه‌مندند و می‌توانند در شرایط مناسب به خوبی رشد کنند. اگر به دنبال حیوان خانگی متفاوت و جذاب هستید، حلزون آلبینو می‌تواند انتخابی عالی باشد.",
+    specs: [
+      { label: "مورد مصرف", describe: "پت (حیوان خانگی)" },
+      { label: "نژاد", describe: "آلبینو" },
+      { label: "نوع نگهداری", describe: "نگهداری در تنگ" },
+      { label: "نگهداری راحت", describe: "بله" },
+    ],
     prices: [
       { label: "کوچک", describe: "50,000" },
       { label: "متوسط", describe: "100,000" },
       { label: "بزرگ (مولد)", describe: "از 340,000 به بالا" },
     ],
     price: 100,
-    suggested: 30,
+    suggested: 1,
   },
   {
     title: "حلزون جید",
@@ -182,20 +192,26 @@ export const products = [
       jade_8,
       jade_9,
     ],
-    category: "حلزون",
+    category: "حلزون ها",
+    stock: true,
     describe:
       "حلزون‌های جید با رنگ‌های درخشان و الگوهای پیچیده پوسته خود، جلوه‌ای زیبا و جذاب به آکواریوم‌ها می‌بخشند. این حلزون‌ها که به راحتی در شرایط مختلف آکواریومی زنده می‌مانند، نه تنها زینتی هستند بلکه به تمیز نگه داشتن محیط آبی کمک می‌کنند. آن‌ها با تغذیه از جلبک‌ها و ضایعات غذایی، نقش مهمی در حفظ تمیزی و سلامت آکواریوم دارند و گزینه‌ای مناسب برای کسانی هستند که تازه به نگهداری آکواریوم‌ها علاقه‌مند شده‌اند.",
-    specs: [{ label: "مورد مصرف", describe: "خزنده ها و موش ها" }],
+    specs: [
+      { label: "مورد مصرف", describe: "پت (حیوان خانگی)" },
+      { label: "نژاد", describe: "جید" },
+      { label: "نوع نگهداری", describe: "نگهداری در تنگ" },
+      { label: "نگهداری راحت", describe: "بله" },
+    ],
     prices: [
       { label: "کوچک", describe: "200,000" },
       { label: "متوسط", describe: "280,000" },
       { label: "بزرگ (مولد)", describe: "از 380,000 به بالا" },
     ],
     price: 280,
-    suggested: 30,
+    suggested: 1,
   },
   {
-    title: "حلزون فولیک",
+    title: "حلزون فولیکا",
     covers: [
       jade_1,
       jade_2,
@@ -208,9 +224,15 @@ export const products = [
       jade_9,
     ],
     category: "حلزون",
+    stock: true,
     describe:
-      "حلزون‌های فولیک، که به خاطر پوسته‌های صاف و براقی که دارند معروف هستند، یکی از محبوب‌ترین گونه‌های حلزون‌های زینتی در آکواریوم‌ها می‌باشند. این حلزون‌ها به خاطر رنگ‌های جذاب خود که اغلب ترکیبی از رنگ‌های خاکستری، قهوه‌ای و طلایی است، توجه زیادی را به خود جلب می‌کنند. حلزون‌های فولیک نه تنها ظاهر زیبایی دارند، بلکه به بهبود کیفیت آب نیز کمک می‌کنند. آن‌ها با تغذیه از جلبک‌ها و ضایعات غذایی موجود در آب، نقش مهمی در حفظ تمیزی و سلامت آکواریوم ایفا می‌کنند. این حلزون‌ها به راحتی با سایر موجودات آکواریومی همزیستی می‌کنند و به مراقبت خاصی نیاز ندارند، که آن‌ها را به یک انتخاب عالی برای آکواریوم‌داران تازه‌کار و با تجربه تبدیل می‌کند.",
-    specs: [{ label: "مورد مصرف", describe: "خزنده ها و موش ها" }],
+      "حلزون‌های فولیکا، که به خاطر پوسته‌های صاف و براقی که دارند معروف هستند، یکی از محبوب‌ترین گونه‌های حلزون‌های زینتی در محفظه ها می‌باشند. این حلزون‌ها به خاطر رنگ‌های جذاب خود که اغلب ترکیبی از رنگ‌های خاکستری، قهوه‌ای و طلایی است، توجه زیادی را به خود جلب می‌کنند.",
+    specs: [
+      { label: "مورد مصرف", describe: "پت (حیوان خانگی)" },
+      { label: "نژاد", describe: "فولیکا" },
+      { label: "نوع نگهداری", describe: "نگهداری در تنگ" },
+      { label: "نگهداری راحت", describe: "بله" },
+    ],
     prices: [
       { label: "کوچک", describe: "150,000" },
       { label: "متوسط", describe: "250,000" },
@@ -218,5 +240,25 @@ export const products = [
     ],
     price: 250,
     suggested: 30,
+  },
+  {
+    title: "حلزون کلکسیونی جید دارک روسی",
+    covers: [
+      jade_fulica_dark_russian_1,
+      jade_fulica_dark_russian_2,
+      jade_fulica_dark_russian_3,
+    ],
+    category: "کلکسیونی و کمیاب",
+    stock: true,
+    describe:
+      "حلزون کلکسیونی جید دارک روسی، یکی از محبوب‌ترین گونه‌های حلزون‌های کلکسیونی است که به دلیل ظاهر منحصر به فرد و رنگ‌بندی زیبای خود جذابیت بسیاری دارد. این حلزون‌ها معمولاً دارای پوسته‌ای شفاف و رنگ‌های متنوعی هستند که می‌تواند از سفید تا رنگ های تیره باشد. نگهداری از این حلزون‌ها نیاز به محیطی مرطوب و آرام دارد و غذای مناسبی مانند سبزیجات تازه و کلسیم می‌تواند به رشد و سلامت آن‌ها کمک کند. اگر به دنبال یک حلزون کلکسیونی با ظاهر جذاب و آسان نگهداری هستید، جید دارک روسی گزینه‌ای عالی است.",
+    specs: [
+      { label: "مورد مصرف", describe: "پت (حیوان خانگی)" },
+      { label: "نژاد", describe: "جید دارک روسی" },
+      { label: "نوع نگهداری", describe: "نگهداری در تنگ" },
+      { label: "نگهداری راحت", describe: "بله" },
+    ],
+    price: 0,
+    suggested: 1,
   },
 ];

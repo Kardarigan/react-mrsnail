@@ -27,7 +27,10 @@ const Over = ({ product }) => {
       <hr />
       <div>
         <h2 className="title-sm mark mark-dark inline">
-          قیمت : {product.price} هزار تومن
+          قیمت :{" "}
+          {product.price > 0
+            ? `${product.price} هزار تومن`
+            : "متغیر (تماس بگرید)"}
         </h2>
         <div className="mt-12 mb-5 flex items-center">
           <i class="fa-sharp fa-solid fa-circle-exclamation" />
