@@ -16,7 +16,6 @@ const Rule = () => {
           اعتبار قانون تا {theRule.expiration}
         </p>
       </section>
-      <Articles thing={theRule.article} />
     </>
   );
 };

@@ -29,7 +29,6 @@ const Blog = () => {
       <Blog_Control blog={theBlog} />
       <Blog_Main blog={theBlog} />
       <Carousel things={familiar} title="مقالات مشابه" type="blog" dark />
-      <Articles thing={articles.blog} />
     </>
   );
 };

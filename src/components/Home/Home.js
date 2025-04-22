@@ -1,5 +1,5 @@
-import { Hero, Articles, Carousel, Category, Infobox } from "../Portal";
-import { articles, categories, hero, infoValue } from "../../data/constans";
+import { Hero, Carousel, Category, Infobox } from "../Portal";
+import { categories, hero, infoValue } from "../../data/constans";
 import { products } from "../../data/products";
 import { Link } from "react-router-dom";
 
@@ -25,7 +25,6 @@ const Home = () => {
       <Carousel title="تازه ترین کالاها" things={products} />
       <Infobox title="ارزش های ما" things={infoValue} />
       <Carousel title="محبوب ترین کالاها" things={products} dark />
-      <Articles thing={articles.home} />
     </>
   );
 };

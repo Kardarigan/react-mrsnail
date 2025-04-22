@@ -42,7 +42,6 @@ const Contact = () => {
         </div>
         <Form fields={contact.contactForm} />
       </section>
-      <Articles thing={articles.home} />
     </>
   );
 };

@@ -1,6 +1,7 @@
 import { Outlet, useLocation } from "react-router-dom";
-import { Navbar, Footer, Loading } from "./Portal";
+import { Navbar, Footer, Loading, Articles } from "./Portal";
 import { useState, useEffect, useRef } from "react";
+import { articles } from "../data/constans";
 
 const Layout = () => {
   const [loading, setLoading] = useState(false);
@@ -41,7 +42,12 @@ const Layout = () => {
       <Navbar />
       <main className="relative text-slate-900" dir="rtl">
         <Loading show={loading} />
-        {!loading && <Outlet />}
+        {!loading && (
+          <>
+            <Outlet />
+            <Articles thing={articles.common} />
+          </>
+        )}
       </main>
       <Footer />
       <button

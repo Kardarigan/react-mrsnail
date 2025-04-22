@@ -12,7 +12,6 @@ const About = () => {
       <Middle thing={middle.about[0]} dark reverse />
       <Numbers />
       <Half thing={half.about[0]} right dark />
-      <Articles thing={articles.home} />
     </>
   );
 };

@@ -44,7 +44,6 @@ const Product = () => {
           dark
         />
       )}
-      <Articles thing={articles.product} />
     </>
   );
 };

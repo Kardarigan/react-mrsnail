@@ -50,7 +50,7 @@ const Blog_Side = ({ blog }) => {
           <h6 className="title-sm font-bold mt-5">دسته‌های کالاها:</h6>
           <ul>
             {categories.map((item, index) => {
-              const path = item.label.split("-").join(" ");
+              const path = "/" + item.label.split("-").join(" ");
               return (
                 <li index={index} className="mt-2">
                   <Link

@@ -18,7 +18,6 @@ const Snail = () => {
       <Slider things={specials} />
       <Carousel things={products} title="پرطرفدار ترین ها" />
       <Carousel things={products} title="محصولاتی حلزونی" dark />
-      <Articles thing={articles.snail} />
     </>
   );
 };
