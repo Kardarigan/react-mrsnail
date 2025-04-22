@@ -13,7 +13,7 @@ const Card = ({ thing, type = "product" }) => {
   return (
     <div className="flex-fullcenter" dir="rtl">
       <div
-        className={`bg-slate-900 p-2 group w-[280px] ${
+        className={`bg-slate-900 p-2 pb-3 group w-[280px] ${
           type === "product" ? "h-[400px]" : "h-[300px]"
         }`}
       >
@@ -40,7 +40,7 @@ const Card = ({ thing, type = "product" }) => {
             </Link>
             <div>
               <hr className="my-2 opacity-30" />
-              <div className="flex-seperate para">
+              <div className="flex-seperate items-start para">
                 <a
                   href="https://t.me/m_r_snail"
                   className="button button-light px-3 py-1 w-auto"
@@ -54,10 +54,21 @@ const Card = ({ thing, type = "product" }) => {
                   ثبت سفارش
                 </a>
                 <h5 className="whitespace-nowrap flex flex-col items-center relative text-end para">
-                  <b className="title-sm">{formattedPrice}</b>
-                  <span className="text-[10px] absolute top-5 font-extralight">
-                    هزار تومان
-                  </span>
+                  {thing.price > 0 ? (
+                    <>
+                      <b className="title-sm">{formattedPrice}</b>
+                      <span className="text-[10px] absolute sm:top-5 top-4 font-extralight">
+                        هزار تومان
+                      </span>
+                    </>
+                  ) : (
+                    <>
+                      <b className="title-sm relative -top-1">متغیر</b>
+                      <span className="text-[10px] absolute top-4 font-extralight">
+                        قیمت
+                      </span>
+                    </>
+                  )}
                 </h5>
               </div>
             </div>

@@ -1,11 +1,11 @@
 h1,
 h2,
 h3 {
-  @apply font-bold;
+  font-weight: 900;
 }
 .ul {
   &::marker {
-    @apply text-slate-900;
+    color: $color_dark;
   }
 }
 
