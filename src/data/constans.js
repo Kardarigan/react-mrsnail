@@ -42,19 +42,9 @@ export const navbar = [
 export const footer = {
   logos: [
     {
-      label: "developer's logo",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/e/e2/ESRB_2013_Adults_Only_18%2B.svg",
-      path: "/",
-    },
-    {
-      label: "developer's logo",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/e/e2/ESRB_2013_Adults_Only_18%2B.svg",
-      path: "/",
-    },
-    {
-      label: "developer's logo",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/e/e2/ESRB_2013_Adults_Only_18%2B.svg",
-      path: "/",
+      label: "نماد ساخت امپراتوری",
+      logo: "http://localhost:3001/static/media/coat-of-arms.205c285c2897da9c80dd.png",
+      path: "http://codeempire.ir/",
     },
   ],
   links: [
