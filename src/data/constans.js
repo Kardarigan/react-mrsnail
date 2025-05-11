@@ -8,11 +8,10 @@ import cateogry_essentials from "../asset/images/category/cateogry_essentials.pn
 import cateogry_warming from "../asset/images/category/category_warming_pad.png";
 // --------------------[hero
 import hero_home from "../asset/images/hero/hero_home.jpg";
-import hero_blog from "../asset/images/hero/hero_blog.png";
-import hero_product from "../asset/images/hero/hero_product.png";
-import hero_about from "../asset/images/hero/hero_about.webp";
-import hero_hq from "../asset/images/hero/hero_hq.webp";
-import hero_snail from "../asset/images/hero/hero_snail.webp";
+import hero_product from "../asset/images/hero/hero_product.jpg";
+import hero_about from "../asset/images/hero/hero_about.jpg";
+import hero_hq from "../asset/images/hero/hero_hq.jpg";
+import hero_snail from "../asset/images/hero/hero_snail.jpg";
 // --------------------[special
 import special_1 from "../asset/images/special/special_1.jpg";
 import special_2 from "../asset/images/special/special_2.png";

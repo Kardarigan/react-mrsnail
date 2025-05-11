@@ -19,7 +19,7 @@ const Ex_Category = () => {
   return (
     <>
       <Breadcrumb />
-      <Hero thing={theCategory?.hero} />
+      <Hero thing={theCategory?.hero} exclusive />
       <Overview
         things={theProducts}
         sortOptions={sorts.products}
