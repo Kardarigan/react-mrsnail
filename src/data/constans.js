@@ -42,7 +42,7 @@ export const footer = {
   logos: [
     {
       label: "نماد ساخت امپراتوری",
-      logo: "http://localhost:3001/static/media/coat-of-arms.205c285c2897da9c80dd.png",
+      logo: "http://www.codeempire.ir/static/media/coat-of-arms.205c285c2897da9c80dd.png",
       path: "http://codeempire.ir/",
     },
   ],
